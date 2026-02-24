@@ -551,7 +551,7 @@
     </section>
     <!-- End Team Section -->
     <!-- Start Why Choose Us Section -->
-    <section class="cs_gray_bg cs_bg_filed" data-src="{{asset('assets/img/service_bg_2.jpg')}}">
+    <section class="cs_gray_bg cs_bg_filed" data-src="{{asset('assets/img/banners/why-choose-banner.jpeg')}}">
       <div class="cs_height_110 cs_height_lg_70"></div>
       <div class="container">
         <div class="row">
@@ -709,7 +709,7 @@
     </section>
     <!-- End Projects Section -->
     <!-- Start CTA Section -->
-    <section class="cs_cta cs_style_2 cs_blue_bg cs_bg_filed cs_center" data-src="{{asset('assets/img/cta_bg_1.jpeg')}}">
+    <section class="cs_cta cs_style_2 cs_blue_bg cs_bg_filed cs_center" data-src="{{asset('assets/img/banners/video-sec-banner.jpeg')}}">
       <div class="container">
         <div class="row align-items-center cs_gap_y_40">
           <div class="col-lg-6">

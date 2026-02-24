@@ -1,5 +1,5 @@
    <!-- Start Footer -->
-   <footer class="cs_footer cs_blue_bg cs_bg_filed cs_white_color" data-src="assets/img/footer_bg.jpg">
+   <footer class="cs_footer cs_blue_bg cs_bg_filed cs_white_color" data-src="assets/img/banners/footer-bg.jpeg">
       <div class="container">
         <div class="cs_footer_row">
           <div class="cs_footer_col">

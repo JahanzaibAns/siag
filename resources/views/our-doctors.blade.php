@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
   <!-- Start Page Heading -->
-  <section class="cs_page_heading cs_bg_filed cs_center" data-src="assets/img/banners/our-doctors-bg.jpg">
+  <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/our-doctors-bg.jpg">
     <div class="container">
       <h1 class="cs_page_title">Our Doctors</h1>
       <ol class="breadcrumb">
@@ -22,7 +22,7 @@
         <h2 class="cs_section_title mb-3">Executive Director</h2>
       </div>
       <div class="our-doctors-section">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-12">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
@@ -53,7 +53,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-qasim-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -72,7 +72,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-khalid-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -90,7 +90,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-paul-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -106,7 +106,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-waqar-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -124,7 +124,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-mustafa-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -142,7 +142,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-nadeem-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -160,7 +160,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-saqib-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -177,7 +177,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-farooq-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -194,7 +194,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-zohair-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -210,7 +210,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-gias.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -235,7 +235,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-sajida-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -252,7 +252,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-babar.jpg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -268,7 +268,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-shahriyar-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -284,7 +284,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-aftaab-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -300,7 +300,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-shanil-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -316,7 +316,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-mansoor-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -332,7 +332,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-asim.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -348,7 +348,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-noval.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -372,7 +372,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/prof-safia.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -397,7 +397,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-aneela.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -410,7 +410,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-komal-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -423,7 +423,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-nusrat.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -436,7 +436,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-ayesha.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -458,7 +458,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/Fahad-Kakar.jpg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -471,7 +471,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-mehreen-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -484,7 +484,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-asma-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -497,7 +497,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-abeer.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -520,7 +520,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/miss-bushra-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -536,7 +536,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-pashmina.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -552,7 +552,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-sania-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -568,7 +568,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/Anum-Jamil.JPG')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -593,7 +593,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-naseer-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -609,7 +609,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-marwan-300.jpeg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -632,7 +632,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/dr-babar.jpg')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -645,7 +645,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/m-waseem-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
@@ -658,7 +658,7 @@
           <div class="col-lg-4">
             <div class="cs_doctor_details_thumbnail position-relative">
               <div class="team-thumb">
-                <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Doctor Image" class="img-fluid">
+                <img src="{{asset('assets/img/team/waqas-300.webp')}}" alt="Doctor Image" class="img-fluid">
                 <div class="cs_doctor_thumbnail_shape1 position-absolute cs_blue_bg"></div>
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
