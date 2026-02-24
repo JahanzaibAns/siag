@@ -1341,6 +1341,18 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+.cs_bg_filed:before {
+  position: absolute;
+  content: '';
+  background: #dcdcdd36;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.cs_bg_filed .container {
+  position: relative; 
 }
 
 .cs_bg_fixed {
@@ -8634,4 +8646,27 @@ label {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgb(255 255 255 / 0%) 10%, rgb(255 255 255 / 0%) 45%, rgb(255 255 255 / 0%) 65%, rgb(255 255 255 / 0%) 100%);
+}
+.cs_doctor_details_thumbnail .team-thumb  img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.dr-saad-width{
+  max-width: 400px;
+}
+
+.our-doctors-section .cs_doctor_details_thumbnail {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cs_doctor_details_thumbnail .team-thumb {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cs_doctor_details_thumbnail .team-details-box h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
 }

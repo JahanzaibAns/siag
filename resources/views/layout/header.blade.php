@@ -74,7 +74,7 @@
                   <li class="menu-item-has-children">
                     <a href="javascript:void(0);">About Us</a>
                     <ul>
-                      <li><a href="javascript:void(0);">Our Doctors</a></li>
+                      <li><a href="{{ route('our.doctors') }}">Our Doctors</a></li>
                       <li><a href="javascript:void(0);">Our Story</a></li>
                       <li><a href="javascript:void(0);">Leadership</a></li>
                       <li><a href="javascript:void(0);">Mission & Vision</a></li>

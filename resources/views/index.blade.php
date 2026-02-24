@@ -10,10 +10,10 @@
                 <div class="cs_hero_text_in">
                   <h1 class="cs_hero_title">Built with <span>Excellence</span> to Heal.</h1>
                   <p class="cs_hero_subtitle">World-class healthcare with advanced technology and compassionate experts dedicated to your well-being.</p>
-                  <div class="cs_hero_info">
+                  <!-- <div class="cs_hero_info">
                     <h3>24/7 Emergency Care</h3>
                     <p>Call Us at: 021-32750524-6</p>
-                  </div>
+                  </div> -->
                   <div class="cs_hero_btns">
                     <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                       <span>Contact Now </span>
@@ -39,10 +39,10 @@
                 <div class="cs_hero_text_in">
                 <h1 class="cs_hero_title">Founded on a <span>Vision</span> to Serve.</h1>
                 <p class="cs_hero_subtitle">Two decades of compassionate, personalized healthcare with integrity and respect for our community.</p>
-                  <div class="cs_hero_info">
+                  <!-- <div class="cs_hero_info">
                     <h3>Expert Medical Team</h3>
                     <p>Call Us at: 021-32750524-6</p>
-                  </div>
+                  </div> -->
                   <div class="cs_hero_btns">
                     <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                       <span>Contact Now </span>
@@ -68,10 +68,10 @@
                 <div class="cs_hero_text_in">
                 <h1 class="cs_hero_title">Advanced <span>Medical</span> Care.</h1>
                 <p class="cs_hero_subtitle">Comprehensive healthcare solutions using cutting-edge technology and evidence-based practices—from routine check-ups to complex procedures.</p>
-                  <div class="cs_hero_info">
+                  <!-- <div class="cs_hero_info">
                     <h3>Specialized Departments</h3>
                     <p>Call Us at: 021-32750524-6</p>
-                  </div>
+                  </div> -->
                   <div class="cs_hero_btns">
                     <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                       <span>Contact Now </span>
@@ -97,10 +97,10 @@
                 <div class="cs_hero_text_in">
                 <h1 class="cs_hero_title">Your Health, <span>Our Priority.</span></h1>
                 <p class="cs_hero_subtitle">Patient-centered care with personalized attention, clear communication, and highest quality in a supportive environment.</p>
-                  <div class="cs_hero_info">
+                  <!-- <div class="cs_hero_info">
                     <h3>Compassionate Care</h3>
                     <p>Call Us at: 021-32750524-6</p>
-                  </div>
+                  </div> -->
                   <div class="cs_hero_btns">
                     <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                       <span>Contact Now </span>
@@ -126,10 +126,10 @@
                 <div class="cs_hero_text_in">
                 <h1 class="cs_hero_title">Healing with <span>Excellence</span> & Compassion.</h1>
                 <p class="cs_hero_subtitle">Advanced medical expertise meets genuine human connection—guiding you through every step with skill, empathy, and dedication to your recovery.</p>
-                  <div class="cs_hero_info">
+                  <!-- <div class="cs_hero_info">
                     <h3>Your Trusted Healthcare Partner</h3>
                     <p>Call Us at: 021-32750524-6</p>
-                  </div>
+                  </div> -->
                   <div class="cs_hero_btns">
                     <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                       <span>Contact Now </span>
@@ -196,68 +196,68 @@
     <section class="cs_about cs_style_1 position-relative">
       <div class="cs_height_120 cs_height_lg_80"></div>
       <div class="container">
-      <div class="row align-items-center cs_gap_y_40">
-        <div class="col-lg-6">
+        <div class="row align-items-center cs_gap_y_40">
+          <div class="col-lg-6">
             <div class="cs_about_thumb">
-            <div class="cs_about_thumb_1">
+              <div class="cs_about_thumb_1">
                 <img src="{{asset('assets/img/about.jpeg')}}" alt="">
-            </div>
-            <div class="cs_about_thumb_2">
+              </div>
+              <div class="cs_about_thumb_2">
                 <img src="{{asset('assets/img/Mission-and-Vision-580x348.jpeg')}}" alt="About Image">
                 <img src="{{asset('assets/img/icons/about_shape_1.png')}}" alt="Shape Image" class="cs_about_thumb_shape_2">
-            </div>
-            <div class="cs_experience_box cs_center">
+              </div>
+              <div class="cs_experience_box cs_center">
                 <p class="cs_experience_box_number">18+</p>
-                <p class="cs_experience_box_title">Years</p>
+                <p class="cs_experience_box_title">Years of Service</p>
+              </div>
             </div>
-            </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">
             <div class="cs_about_content">
-            <div class="cs_section_heading cs_style_1">
+              <div class="cs_section_heading cs_style_1">
                 <p class="cs_section_subtitle cs_accent_color">
-                <span class="cs_shape_left"></span>
-                OUR STORY
+                  <span class="cs_shape_left"></span>
+                  OUR STORY
                 </p>
                 <h2 class="cs_section_title">Pakistan's First Dedicated Endoscopy Institute.</h2>
-            </div>
-            <p class="cs_about_text">Founded in 2006 by Prof. M Saeed Quraishy & Dr. Saad Khalid Niaz at Civil Hospital Karachi. What began as a two-room unit is now a pioneering center of excellence—making advanced GI care a right, not a privilege.</p>
-            <div class="row cs_gap_y_30">
+              </div>
+              <p class="cs_about_text">Founded in 2006 by Prof. M Saeed Quraishy & Dr. Saad Khalid Niaz at Civil Hospital Karachi. What began as a two-room unit is now a pioneering center of excellence—making advanced GI care a right, not a privilege.</p>
+              <div class="row cs_gap_y_30">
                 <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
+                  <div class="cs_iconbox cs_style_1">
                     <div class="cs_iconbox_head">
-                    <div class="cs_iconbox_icon cs_center">
-                        <img src="{{asset('assets/img/icons/about_icon_1.png')}}" alt="">
+                      <div class="cs_iconbox_icon cs_center">
+                        <img src="{{asset('assets/img/icons/about_icon_1.png')}}" alt="Heart icon representing compassion">
+                      </div>
+                      <h3 class="cs_iconbox_title m-0">Compassion</h3>
                     </div>
-                    <h3 class="cs_iconbox_title m-0">Compassion</h3>
-                    </div>
-                    <p class="cs_iconbox_subtitle mb-0">Serving with dignity.</p>
-                </div>
+                    <p class="cs_iconbox_subtitle mb-0">We serve every patient with dignity and respect.</p>
+                  </div>
                 </div>
                 <div class="col-sm-6">
-                <div class="cs_iconbox cs_style_1">
+                  <div class="cs_iconbox cs_style_1">
                     <div class="cs_iconbox_head">
-                    <div class="cs_iconbox_icon cs_center">
-                        <img src="{{asset('assets/img/icons/about_icon_2.png')}}" alt="">
+                      <div class="cs_iconbox_icon cs_center">
+                        <img src="{{asset('assets/img/icons/about_icon_2.png')}}" alt="Shield icon representing excellence">
+                      </div>
+                      <h3 class="cs_iconbox_title m-0">Excellence</h3>
                     </div>
-                    <h3 class="cs_iconbox_title m-0">Excellence</h3>
-                    </div>
-                    <p class="cs_iconbox_subtitle mb-0">Pioneering care & research.</p>
+                    <p class="cs_iconbox_subtitle mb-0">We pioneer advanced care and research.</p>
+                  </div>
                 </div>
-                </div>
-            </div>
-            <div class="cs_about_iconbox">
+              </div>
+              <div class="cs_about_iconbox">
                 <div class="cs_about_iconbox_icon cs_center">
-                <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-regular fa-circle-check"></i>
                 </div>
                 <p class="cs_about_iconbox_subtitle">Where service meets innovation. <a href="#">READ MORE +</a></p>
-            </div>
-            <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+              </div>
+              <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
                 <span>About More </span>
                 <i class="fa-solid fa-angles-right"></i>
-            </a>
+              </a>
             </div>
-        </div>
+          </div>
         </div>
       </div>
       <div class="cs_section_img"><img src="{{asset('assets/img/about_section_img_1.png')}}" alt=""></div>
@@ -473,7 +473,7 @@
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
                   <a href="javascript:void(0);" class="cs_team_thumbnail">
-                    <img src="{{asset('assets/img/team/team1.jpeg')}}" alt="Team Thumbnail">
+                    <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
                     <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Saad Khalid Niaz</a></h3>
@@ -497,7 +497,7 @@
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
                   <a href="javascript:void(0);" class="cs_team_thumbnail">
-                    <img src="{{asset('assets/img/team/team3.jpeg')}}" alt="Team Thumbnail">
+                    <img src="{{asset('assets/img/team/dr-babar.jpg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
                     <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Babar Matin</a></h3>
