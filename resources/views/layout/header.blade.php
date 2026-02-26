@@ -109,7 +109,7 @@
                   <li><a href="javascript:void(0);">Tenders</a></li>
                 </ul>
               </div>
-              <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+              <a href="{{ route('contact') }}" class="cs_btn cs_style_1 cs_color_1">
                 <span>Contact Now </span>
                 <i class="fa-solid fa-angles-right"></i>
               </a>

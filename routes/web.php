@@ -11,3 +11,6 @@ Route::get('/our-doctors', function () {
 Route::get('/appointments', function () {
     return view('appointments');
 })->name('appointments');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
