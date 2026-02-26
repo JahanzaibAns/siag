@@ -64,7 +64,7 @@
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a class="cs_site_branding" href="index.php">
-                <img src="assets/img/logo.webp" alt="Logo">
+                <img src="{{asset('assets/img/logo.webp')}}" alt="Logo">
               </a>
             </div>
             <div class="cs_main_header_right">
