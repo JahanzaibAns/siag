@@ -896,7 +896,7 @@
           </form>
           </div>
           <div class="col-lg-6">
-            <div class="cs_solution_thumbnail cs_bg_filed" data-src="{{asset('assets/img/medical_solution_1.jpg')}}">
+            <div class="cs_solution_thumbnail cs_bg_filed" data-src="{{asset('assets/img/medical_solution_1.JPG')}}">
             </div>
           </div>
         </div>

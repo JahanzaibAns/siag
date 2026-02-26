@@ -85,7 +85,7 @@
                     <a href="javascript:void(0);">Patients</a>
                     <ul>
                       <li><a href="javascript:void(0);">Services</a></li>
-                      <li><a href="javascript:void(0);">Appointment</a></li>
+                      <li><a href="{{ route('appointments') }}">Appointment</a></li>
                       <li><a href="javascript:void(0);">Pancreatic Clinic</a></li>
                     </ul>
                   </li>
