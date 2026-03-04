@@ -14,6 +14,19 @@ Route::get('/appointments', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+Route::get('/our-story', function () {
+    return view('our-story');
+})->name('our.story');
+Route::get('/leadership', function () {
+    return view('leadership');
+})->name('leadership');
+Route::get('/mission-vision', function () {
+    return view('mission-vision');
+})->name('mission.vision');
+Route::get('/departments', function () {
+    return view('departments');
+})->name('departments');
+
 
 Route::get('/admin/login', function () {
     return view('login');

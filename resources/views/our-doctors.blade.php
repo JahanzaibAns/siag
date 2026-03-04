@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
   <!-- Start Page Heading -->
-  <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/our-doctors-bg.jpg">
+  <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="{{asset('assets/img/banners/our-doctors-bg.jpg')}}">
     <div class="container">
       <h1 class="cs_page_title">Our Doctors</h1>
       <ol class="breadcrumb">

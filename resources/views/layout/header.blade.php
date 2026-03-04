@@ -63,7 +63,7 @@
         <div class="container">
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
-              <a class="cs_site_branding" href="index.php">
+              <a class="cs_site_branding" href="{{ route('index') }}">
                 <img src="{{asset('assets/img/logo.webp')}}" alt="Logo">
               </a>
             </div>
@@ -75,10 +75,10 @@
                     <a href="javascript:void(0);">About Us</a>
                     <ul>
                       <li><a href="{{ route('our.doctors') }}">Our Doctors</a></li>
-                      <li><a href="javascript:void(0);">Our Story</a></li>
-                      <li><a href="javascript:void(0);">Leadership</a></li>
-                      <li><a href="javascript:void(0);">Mission & Vision</a></li>
-                      <li><a href="javascript:void(0);">Departments</a></li>
+                      <li><a href="{{ route('our.story') }}">Our Story</a></li>
+                      <li><a href="{{ route('leadership') }}">Leadership</a></li>
+                      <li><a href="{{ route('mission.vision') }}">Mission & Vision</a></li>
+                      <li><a href="{{ route('departments') }}">Departments</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
