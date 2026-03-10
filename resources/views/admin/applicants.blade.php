@@ -4,43 +4,35 @@
     <div class="page-wrapper">
         <div class="page-content">
             <div class="card">
-                <div class="card-header">
+                <!-- <div class="card-header">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-end">
                             <a href="{{ route('admin.add.job') }}" class="btn theme_btn">Add Job</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="card-body">
                     <div class="table-responsive">
                         <table id="jobs" class="table table-striped table-bordered">
                             <thead class="table-dark">
                                 <tr>
                                     <th>Sr.No</th>
-                                    <th>Title</th>
-                                    <th>Location</th>
-                                    <th>Job Type</th>
-                                    <th>Action</th>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Subject</th>
+                                    <th>CV</th>
                                 </tr>
                             </thead>
                             <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Gastroenterologist</td>
-                                        <td>Karachi</td>
-                                        <td>Full Time</td>
+                                        <td>Ubaid</td>
+                                        <td><a href="mailto:s.u.shah@gmail.com">s.u.shah@gmail.com</a></td>
+                                        <td><a href="tel:+9230000000">+9230000000</a></td>
+                                        <td>Applying Position</td>
                                         <td>
-                                            <div class="icon_flex">
-                                                <a href="{{ route('admin.edit.job') }}" title="Edit">
-                                                    <i class="fa fa-edit"></i>
-                                                </a>
-                                                <a href="javascript:void(0);" title="Delete">
-                                                    <i class="fa-solid fa-trash-can"></i>
-                                                </a>
-                                                <a href="{{ route('admin.applicants') }}" title="Applicants">
-                                                    <i class="fa fa-user"></i>
-                                                </a>
-                                            </div>
+                                            <a href="http://127.0.0.1:8000/contact-us" title="download CV">Download CV</a>
                                         </td>
                                     </tr>
                                 

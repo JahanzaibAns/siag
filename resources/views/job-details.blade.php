@@ -156,9 +156,9 @@
                 </div>
               </div>
               
-              <div class="col-lg-12">
+              <!-- <div class="col-lg-12">
                 <textarea rows="4" name="message" class="cs_form_field" placeholder="Cover Letter / Additional Information"></textarea>
-              </div>
+              </div> -->
              
               <div class="col-lg-12">
                 <button type="submit" class="cs_btn cs_style_1 cs_color_1 w-100">Submit Application</button>

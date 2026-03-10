@@ -16,7 +16,7 @@
                         <ul class="metismenu" id="menu">
                             <li>
                                 <a href="{{ route('admin.dashboard') }}" class="{{ Request::is('admin/dashboard') ? ' active' : '' }}">
-                                    <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
+                                    <div class="parent-icon"><i class="fa-solid fa-chart-pie"></i>
                                     </div>
                                     <div class="menu-title">Dashboard</div>
                                 </a>
@@ -24,26 +24,25 @@
                             
                             <li>
                                 <a href="{{ route('admin.bookings') }}" class="{{ Request::is('admin/bookings') ? ' active' : '' }}">
-                                    <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
+                                    <div class="parent-icon"><i class="fa-solid fa-calendar-check"></i>
                                     </div>
                                     <div class="menu-title">Bookings</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('admin.inquiries') }}" class="{{ Request::is('admin/inquiries') ? ' active' : '' }}">
-                                    <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
+                                    <div class="parent-icon"><i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="menu-title">Inquiries</div>
                                 </a>
                             </li>
-                            <!-- <li>
-                                <a href="javascript:void(0);" class="{{ Request::is('admin/blogs') ? ' active' : '' }}">
-                                    <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
+                            <li>
+                                <a href="{{ route('admin.jobs')}}" class="{{ Request::is('admin/jobs') ? ' active' : '' }}">
+                                    <div class="parent-icon"><i class="fa-solid fa-briefcase"></i>
                                     </div>
-                                    <div class="menu-title">Blogs</div>
+                                    <div class="menu-title">Jobs</div>
                                 </a>
-                            </li> -->
-
+                            </li>
                         </ul>
                     </div>
                 </div>
