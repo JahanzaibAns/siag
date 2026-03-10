@@ -84,15 +84,15 @@
                   <li class="menu-item-has-children">
                     <a href="javascript:void(0);">Patients</a>
                     <ul>
-                      <li><a href="javascript:void(0);">Services</a></li>
+                      <li><a href="{{ route('services')}}">Services</a></li>
                       <li><a href="{{ route('appointments') }}">Appointment</a></li>
-                      <li><a href="javascript:void(0);">Pancreatic Clinic</a></li>
+                      <!-- <li><a href="javascript:void(0);">Pancreatic Clinic</a></li> -->
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="javascript:void(0);">Academics</a>
                     <ul>
-                      <li><a href="javascript:void(0);">Careers</a></li>
+                      <li><a href="{{ route('careers')}}">Careers</a></li>
                       <li><a href="javascript:void(0);">Workshops</a></li>
                       <li><a href="javascript:void(0);">Trainings</a></li>
                       <li><a href="javascript:void(0);">Sessions</a></li>

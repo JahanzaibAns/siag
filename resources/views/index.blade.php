@@ -276,28 +276,28 @@
               <div class="cs_counter_icon cs_center">
                 <i class="fas fa-stethoscope"></i>
               </div>
-              <div class="cs_counter_nmber"><span data-count-to="38000" class="odometer"></span>+</div>
+              <div class="cs_counter_nmber"><span data-count-to="4273" class="odometer"></span>+</div>
               <p class="cs_counter_title mb-0">Colonoscopies</p>
             </div>
             <div class="cs_counter cs_style_1">
               <div class="cs_counter_icon cs_center">
                 <i class="fas fa-procedures"></i>
               </div>
-              <div class="cs_counter_nmber"><span data-count-to="44000" class="odometer"></span>+</div>
+              <div class="cs_counter_nmber"><span data-count-to="9852" class="odometer"></span>+</div>
               <p class="cs_counter_title mb-0">OGD Procedures</p>
             </div>
             <div class="cs_counter cs_style_1">
               <div class="cs_counter_icon cs_center">
                 <i class="fas fa-x-ray"></i>
               </div>
-              <div class="cs_counter_nmber"><span data-count-to="4000" class="odometer"></span>+</div>
+              <div class="cs_counter_nmber"><span data-count-to="7138" class="odometer"></span>+</div>
               <p class="cs_counter_title mb-0">ERCPs</p>
             </div>
             <div class="cs_counter cs_style_1">
               <div class="cs_counter_icon cs_center">
               <i class="fas fa-magnet"></i>
               </div>
-              <div class="cs_counter_nmber"><span data-count-to="650" class="odometer"></span>+</div>
+              <div class="cs_counter_nmber"><span data-count-to="1780" class="odometer"></span>+</div>
               <p class="cs_counter_title mb-0">EUS Procedures</p>
             </div>
           </div>

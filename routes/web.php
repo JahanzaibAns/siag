@@ -26,6 +26,15 @@ Route::get('/mission-vision', function () {
 Route::get('/departments', function () {
     return view('departments');
 })->name('departments');
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+Route::get('/careers', function () {
+    return view('careers');
+})->name('careers');
+Route::get('/job-details', function () {
+    return view('job-details');
+})->name('job.details');
 
 
 Route::get('/admin/login', function () {
@@ -45,3 +54,12 @@ Route::get('/admin/booking-details', function () {
 Route::get('/admin/inquiries', function () {
     return view('admin.inquiries');
 })->name('admin.inquiries');
+Route::get('/admin/jobs', function () {
+    return view('admin.jobs');
+})->name('admin.jobs');
+Route::get('/admin/add-job', function () {
+    return view('admin.add-job');
+})->name('admin.add.job');
+Route::get('/admin/edit-job', function () {
+    return view('admin.edit-job');
+})->name('admin.edit.job');
