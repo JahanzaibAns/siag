@@ -97,6 +97,7 @@
     <script src="{{ asset('assets/js/wow.min.js')}}"></script>
     <script src="{{ asset('assets/js/jquery.slick.min.js')}}"></script>
     <script src="{{ asset('assets/js/odometer.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="{{ asset('assets/js/main.js')}}"></script>
   </body>
 </html>

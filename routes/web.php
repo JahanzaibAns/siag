@@ -35,6 +35,28 @@ Route::get('/careers', function () {
 Route::get('/job-details', function () {
     return view('job-details');
 })->name('job.details');
+Route::get('/workshop', function () {
+    return view('workshop');
+})->name('workshop');
+Route::get('/trainings', function () {
+    return view('trainings');
+})->name('trainings');
+Route::get('/sessions', function () {
+    return view('sessions');
+})->name('sessions');
+Route::get('/newsletter', function () {
+    return view('newsletter');
+})->name('newsletter');
+Route::get('/events', function () {
+    return view('events');
+})->name('events');
+Route::get('/images', function () {
+    return view('images');
+})->name('images');
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videos');
+
 
 
 Route::get('/admin/login', function () {

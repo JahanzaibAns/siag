@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/odometer.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="{{asset('assets/css/slick.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
   </head>
@@ -93,17 +94,19 @@
                     <a href="javascript:void(0);">Academics</a>
                     <ul>
                       <li><a href="{{ route('careers')}}">Careers</a></li>
-                      <li><a href="javascript:void(0);">Workshops</a></li>
-                      <li><a href="javascript:void(0);">Trainings</a></li>
-                      <li><a href="javascript:void(0);">Sessions</a></li>
-                      <li><a href="javascript:void(0);">Fellowship Programs</a></li>
+                      <li><a href="{{ route('workshop')}}">Workshops</a></li>
+                      <li><a href="{{ route('trainings')}}">Trainings</a></li>
+                      <li><a href="{{ route('sessions')}}">Sessions</a></li>
+                      <!-- <li><a href="javascript:void(0);">Fellowship Programs</a></li> -->
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="">Media & Gallery</a>
                     <ul>
-                      <li><a href="javascript:void(0);">Events & Newsletter</a></li>
-                      <li><a href="javascript:void(0);">Gallery</a></li>
+                      <li><a href="{{ route('newsletter')}}">Newsletter</a></li>
+                      <li><a href="{{ route('events')}}">Events</a></li>
+                      <li><a href="{{ route('images')}}">Images</a></li>
+                      <li><a href="{{ route('videos')}}">Videos</a></li>
                     </ul>
                   </li>
                   <li><a href="javascript:void(0);">Tenders</a></li>

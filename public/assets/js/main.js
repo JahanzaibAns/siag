@@ -385,3 +385,17 @@
     });
   }
 })(jQuery); // End of use strict
+
+$(document).ready(function() {
+  $('[data-fancybox="gallery"]').fancybox({
+      buttons: [
+          "zoom",
+          "slideShow",
+          "fullScreen",
+          "thumbs",
+          "close"
+      ],
+      loop: true,
+      protect: true
+  });
+});

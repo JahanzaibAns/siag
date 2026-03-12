@@ -3396,7 +3396,7 @@ label {
   }
 }
 
-.cs_project_grid.cs_style_1 .cs_project_item:nth-child(1) {
+/* .cs_project_grid.cs_style_1 .cs_project_item:nth-child(1) {
   grid-column: auto/span 2;
 }
 
@@ -3404,9 +3404,9 @@ label {
   .cs_project_grid.cs_style_1 .cs_project_item:nth-child(1) {
     grid-column: auto/span 4;
   }
-}
+} */
 
-.cs_project_grid.cs_style_1 .cs_project_item:nth-child(2) {
+/* .cs_project_grid.cs_style_1 .cs_project_item:nth-child(2) {
   grid-column: auto/span 2;
 }
 
@@ -3414,7 +3414,7 @@ label {
   .cs_project_grid.cs_style_1 .cs_project_item:nth-child(2) {
     grid-column: auto/span 4;
   }
-}
+} */
 
 .cs_project_grid.cs_style_2 {
   display: grid;
@@ -10482,4 +10482,7 @@ label {
 
 .job-details-section .fa-regular {
   font-weight: 400;
+}
+.section_text_black {
+    color: #383b46;
 }
