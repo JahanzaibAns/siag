@@ -64,7 +64,7 @@
                                 <div class="dropdown-divider mb-0"></div>
                             </li>
                             <li>
-                                <form id="logout-form" action="" method="POST">
+                                <form id="logout-form" action="{{ route('admin.logout') }}" method="POST">
                                     @csrf
                                     <a class="dropdown-item" href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
                                 </form>
