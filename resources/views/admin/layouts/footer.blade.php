@@ -13,9 +13,19 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
         @if(session('success'))
-           Swal.fire("Success!", "{{ session('success') }}", "success");
+           Swal.fire({
+               icon: 'success',
+               title: 'Success!',
+               text: '{{ session('success') }}',
+               confirmButtonColor: '#2193b0'
+           });
        @elseif(session('error'))
-           Swal.fire("Error!", "{{ session('error') }}", "error");
+           Swal.fire({
+               icon: 'error',
+               title: 'Error!',
+               text: '{{ session('error') }}',
+               confirmButtonColor: '#2193b0'
+           });
        @endif
 </script>
 <script src="{{ asset('admin-assets/js/main.js') }}"></script>

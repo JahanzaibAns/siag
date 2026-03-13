@@ -14,23 +14,51 @@
                                     <th>Email</th>
                                     <th>Phone</th>
                                     <th>Procedure</th>
-                                    <th>Location</th>
-                                    <th>Date</th>
+                                    <th>Doctor</th>
+                                    <th>Appointment Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>test 1</td>
-                                    <td>test@gmail.com</td>
-                                    <td>03001212123</td>
-                                    <td>ERCP</td>
-                                    <td>Dr Ayesha</td>
-                                    <td>02/27/2026</td>
-                                </tr>
-                                <!-- <tr>
-                                    <td colspan="7">No records found.</td>
-                                </tr> -->
+                                @forelse($appointments as $index => $appointment)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $appointment->name }}</td>
+                                        <td><a href="mailto:{{ $appointment->email }}">{{ $appointment->email }}</a></td>
+                                        <td><a href="tel:{{ $appointment->phone }}">{{ $appointment->phone }}</a></td>
+                                        <td>{{ $appointment->procedure }}</td>
+                                        <td>{{ $appointment->doctor }}</td>
+                                        <td>{{ $appointment->appointment_date->format('M d, Y') }}</td>
+                                        <td>
+                                            <span class="badge 
+                                                @if($appointment->status == 'confirmed') bg-success
+                                                @elseif($appointment->status == 'cancelled') bg-danger
+                                                @else bg-warning
+                                                @endif">
+                                                {{ ucfirst($appointment->status) }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="icon_flex">
+                                                <a href="{{ route('admin.bookings.details', $appointment) }}" title="View Details">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <form action="{{ route('admin.bookings.destroy', $appointment) }}" method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this appointment?');">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer;" title="Delete">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="9" class="text-center">No appointments found.</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
@@ -51,7 +79,7 @@
     <script>
         $(document).ready(function() {
             $('#bookings').DataTable({
-                order: [[0, 'desc']], // Order by the first column (ID) in descending order
+                order: [[6, 'desc']], // Order by Appointment Date column (index 6) in descending order
                 lengthChange: false,
                 buttons: ['copy', 'excel', 'pdf', 'print']
             });

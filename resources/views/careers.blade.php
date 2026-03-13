@@ -30,167 +30,30 @@
       <div class="cs_height_50 cs_height_lg_40"></div>
 
       <div class="careers-job-list">
-        <!-- Job Item 1 - Gastroenterologist -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Gastroenterologist</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 3 days ago</span>
+        @forelse($jobs as $job)
+          <div class="careers-job-item">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3 class="careers-job-title">{{ $job->title }}</h3>
+                <div class="careers-job-company">{{ $job->company }}</div>
+                <div class="careers-job-meta">
+                  <span><i class="fa-solid fa-location-dot"></i> {{ $job->location }}</span>
+                  <span><i class="fa-solid fa-clock"></i> {{ $job->job_type }}</span>
+                  <span><i class="fa-regular fa-calendar"></i> Posted {{ $job->posted_date->diffForHumans() }}</span>
+                </div>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="{{ route('job.details', $job) }}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        @empty
+          <div class="careers-job-item">
+            <div class="text-center py-5">
+              <p>No job openings available at the moment. Please check back later.</p>
             </div>
           </div>
-        </div>
-
-        <!-- Job Item 2 - Human Resource Officer -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Human Resource Officer</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 1 month ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 3 - Procurement Officer -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Procurement Officer</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 1 month ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 4 - Store Helper -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Store Helper Required!</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 5 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 5 - Clinical Research Nurse -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Clinical Research Nurse Required!</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 5 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 6 - Manager Finance -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Manager Finance Required!</h3>
-              <div class="careers-job-company">Sindh Institute of Advance Endoscopy & Gastroenterology</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 5 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 7 - Chief Financial Officer -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Chief Financial Officer Required!</h3>
-              <div class="careers-job-company">SIAG</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 5 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 8 - Quality Assurance Officer -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Quality Assurance Officer</h3>
-              <div class="careers-job-company">SIAG</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 5 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Job Item 9 - Store Helper -->
-        <div class="careers-job-item">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="careers-job-title">Store Helper Required</h3>
-              <div class="careers-job-company">SIAG</div>
-              <div class="careers-job-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Karachi</span>
-                <span><i class="fa-solid fa-clock"></i> Full Time</span>
-                <span><i class="fa-regular fa-calendar"></i> Posted 8 months ago</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="{{ route('job.details')}}" class="cs_btn cs_style_2">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
+        @endforelse
       </div>
     </div>
     <div class="cs_height_100 cs_height_lg_70"></div>

@@ -40,7 +40,7 @@
                 <h5 class="mb-0">Add New Job Posting</h5>
             </div>
             <div class="card-body">
-                <form method="POST" id="jobForm" enctype="multipart/form-data" action="">
+                <form method="POST" id="jobForm" enctype="multipart/form-data" action="{{ route('admin.jobs.store') }}">
                     @csrf
                     
                     <!-- Hidden fields for editor content -->

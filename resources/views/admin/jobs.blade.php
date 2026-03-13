@@ -20,33 +20,42 @@
                                     <th>Title</th>
                                     <th>Location</th>
                                     <th>Job Type</th>
+                                    <th>Applicants</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @forelse($jobs as $index => $job)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Gastroenterologist</td>
-                                        <td>Karachi</td>
-                                        <td>Full Time</td>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $job->title }}</td>
+                                        <td>{{ $job->location }}</td>
+                                        <td>{{ $job->job_type }}</td>
+                                        <td>
+                                            <a href="{{ route('admin.applicants', ['job' => $job->id]) }}" class="badge bg-primary" style="text-decoration: none;">
+                                                {{ $job->applications_count }} {{ $job->applications_count == 1 ? 'Applicant' : 'Applicants' }}
+                                            </a>
+                                        </td>
                                         <td>
                                             <div class="icon_flex">
-                                                <a href="{{ route('admin.edit.job') }}" title="Edit">
+                                                <a href="{{ route('admin.edit.job', $job) }}" title="Edit">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
-                                                <a href="javascript:void(0);" title="Delete">
-                                                    <i class="fa-solid fa-trash-can"></i>
-                                                </a>
-                                                <a href="{{ route('admin.applicants') }}" title="Applicants">
-                                                    <i class="fa fa-user"></i>
-                                                </a>
+                                                <form action="{{ route('admin.jobs.destroy', $job) }}" method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this job?');">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer;" title="Delete">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </form>
                                             </div>
                                         </td>
                                     </tr>
-                                
-                                    <!-- <tr>
-                                        <td colspan="5">No records found.</td>
-                                    </tr> -->
+                                @empty
+                                    <tr>
+                                        <td colspan="6" class="text-center">No jobs found.</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>

@@ -98,6 +98,33 @@
     <script src="{{ asset('assets/js/jquery.slick.min.js')}}"></script>
     <script src="{{ asset('assets/js/odometer.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if(session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '{{ session('success') }}',
+                confirmButtonColor: '#2193b0'
+            });
+        @endif
+        @if(session('error'))
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: '{{ session('error') }}',
+                confirmButtonColor: '#2193b0'
+            });
+        @endif
+        @if($errors->any())
+            Swal.fire({
+                icon: 'error',
+                title: 'Validation Error!',
+                html: '<ul style="text-align: left; padding-left: 20px;">@foreach($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul>',
+                confirmButtonColor: '#2193b0'
+            });
+        @endif
+    </script>
     <script src="{{ asset('assets/js/main.js')}}"></script>
   </body>
 </html>

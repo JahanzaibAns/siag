@@ -7,7 +7,7 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
         <li class="breadcrumb-item"><a href="{{route('careers')}}">Careers</a></li>
-        <li class="breadcrumb-item active">Gastroenterologist - GI Motility</li>
+        <li class="breadcrumb-item active">{{ $job->title }}</li>
       </ol>
     </div>
   </section>
@@ -24,88 +24,56 @@
           <div class="job-header-card">
             <div class="d-flex justify-content-between align-items-start flex-wrap">
               <div>
-                <h2 class="job-title">Consultant Gastroenterologist - GI Motility</h2>
+                <h2 class="job-title">{{ $job->title }}</h2>
                 <div class="job-meta-top">
-                  <span class="company-name">Sindh Institute of Advanced Gastroenterology (SIAG)</span>
+                  <span class="company-name">{{ $job->company }}</span>
                 </div>
               </div>
-              <span class="job-badge">Full Time</span>
+              <span class="job-badge">{{ $job->job_type }}</span>
             </div>
             
             <div class="job-meta-info">
               <div class="job-meta-item">
                 <i class="fa-solid fa-calendar"></i>
-                <span>Posted: March 7, 2026</span>
+                <span>Posted: {{ $job->posted_date->format('F d, Y') }}</span>
               </div>
               <div class="job-meta-item">
                 <i class="fa-solid fa-location-dot"></i>
-                <span>Karachi</span>
+                <span>{{ $job->location }}</span>
               </div>
               <div class="job-meta-item">
                 <i class="fa-regular fa-clock"></i>
-                <span>Posted 3 days ago</span>
-              </div>
-              <div class="job-meta-item">
-                <i class="fa-regular fa-user"></i>
-                <span>by admin</span>
+                <span>Posted {{ $job->posted_date->diffForHumans() }}</span>
               </div>
             </div>
           </div>
 
           <!-- Job Description -->
           <div class="job-content-card">
+            @if($job->description)
             <div class="job-section">
               <h3 class="job-section-title">Job Description</h3>
-              <p>Sindh Institute of Advanced Gastroenterology (SIAG) invites applications from highly qualified and motivated Consultant Gastroenterologists with a special interest and expertise in Gastrointestinal Motility Disorders. The incumbent will be responsible for leading and independently running the already established GI Motility Unit, delivering advanced endoscopic and therapeutic services, contributing significantly to clinical research, and actively participating in training and capacity building of fellows and residents.</p>
+              <div>{!! $job->description !!}</div>
             </div>
+            @endif
 
+            @if($job->qualifications)
             <div class="job-section">
-              <h3 class="job-section-title">Key Responsibilities</h3>
-              <h4 class="job-subsection-title">Clinical & Procedural:</h4>
-              <ul class="job-list">
-                <li>Lead and expand the GI Motility Laboratory.</li>
-                <li>Diagnose and manage complex esophageal, gastric, intestinal, and anorectal motility disorders.</li>
-                <li>Perform specialized investigations (HRM, pH impedance, anorectal manometry, biofeedback).</li>
-                <li>Provide OPD, inpatient consultations, and emergency on-call services.</li>
-                <li>Conduct advanced endoscopic procedures including gastroscopy, colonoscopy, and ERCP.</li>
-              </ul>
-
-              <h4 class="job-subsection-title">Teaching & Training:</h4>
-              <ul class="job-list">
-                <li>Train and mentor fellows and residents in GI motility diagnostics and procedures.</li>
-                <li>Supervise academic activities (case discussions, journal clubs, M&M meetings).</li>
-                <li>Support research training and SOP development.</li>
-              </ul>
-
-              <h4 class="job-subsection-title">Research & Academic:</h4>
-              <ul class="job-list">
-                <li>Conduct and supervise clinical research in GI motility.</li>
-                <li>Minimum two peer-reviewed publications per year.</li>
-                <li>Ensure IRB and ethical compliance.</li>
-              </ul>
-
-              <h4 class="job-subsection-title">Administrative:</h4>
-              <ul class="job-list">
-                <li>Oversee daily operations of the GI Motility Unit.</li>
-                <li>Maintain documentation, quality standards, and institutional compliance.</li>
-                <li>Participate in departmental committees and service development.</li>
-              </ul>
+              <h3 class="job-section-title">Qualifications & Requirements</h3>
+              <div>{!! $job->qualifications !!}</div>
             </div>
+            @endif
 
+            @if($job->experience)
             <div class="job-section">
-              <h3 class="job-section-title">Qualification & Experience</h3>
-              <ul class="job-list">
-                <li><strong>Qualification:</strong> FCPS / MD / MRCP (or equivalent) in Gastroenterology. Specialized training in GI Motility Disorders</li>
-                <li><strong>Experience:</strong> Minimum 2 years' experience in a dedicated GI Motility Lab.</li>
-                <li>Proven expertise in ERCP and therapeutic endoscopy.</li>
-                <li>Demonstrated research publications.</li>
-                <li>Teaching hospital experience preferred.</li>
-              </ul>
+              <h3 class="job-section-title">Experience Required</h3>
+              <p>{{ $job->experience }}</p>
             </div>
+            @endif
 
             <div class="job-section">
               <h3 class="job-section-title">Employment Type</h3>
-              <p>Full-time / Contract</p>
+              <p>{{ $job->job_type }}</p>
             </div>
 
             <div class="job-section">
@@ -113,7 +81,7 @@
               <p>Interested candidates may send their updated CV to:</p>
               <div class="job-email-box">
                 <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:waqas.qadir@siagpk.org">waqas.qadir@siagpk.org</a>
+                <a href="mailto:{{ $job->contact_email }}">{{ $job->contact_email }}</a>
               </div>
             </div>
           </div>
@@ -125,8 +93,9 @@
             <h3 class="apply-form-title">Apply for this Position</h3>
             <p class="apply-form-subtitle">Fill the form below to apply for this job</p>
             
-            <form class="cs_contact_form row cs_gap_y_30" method="POST" enctype="multipart/form-data">
+            <form class="cs_contact_form row cs_gap_y_30" method="POST" action="{{ route('job.application.store') }}" enctype="multipart/form-data">
               @csrf
+              <input type="hidden" name="job_id" value="{{ $job->id }}">
               <div class="col-md-12">
                 <input type="text" name="name" class="cs_form_field" placeholder="Your Full Name *" required>
               </div>
@@ -165,7 +134,7 @@
               </div>
               
               <div class="col-lg-12">
-                <p class="form-note"><i class="fa-regular fa-info-circle"></i> You can also email your CV directly to <a href="mailto:waqas.qadir@siagpk.org">waqas.qadir@siagpk.org</a></p>
+                <p class="form-note"><i class="fa-regular fa-info-circle"></i> You can also email your CV directly to <a href="mailto:{{ $job->contact_email }}">{{ $job->contact_email }}</a></p>
               </div>
             </form>
             
@@ -177,37 +146,39 @@
                   <i class="fa-regular fa-calendar"></i>
                   <div>
                     <strong>Posted On:</strong>
-                    <span>March 7, 2026</span>
+                    <span>{{ $job->posted_date->format('F d, Y') }}</span>
                   </div>
                 </li>
                 <li>
                   <i class="fa-regular fa-clock"></i>
                   <div>
                     <strong>Posted:</strong>
-                    <span>3 days ago</span>
+                    <span>{{ $job->posted_date->diffForHumans() }}</span>
                   </div>
                 </li>
                 <li>
                   <i class="fa-regular fa-briefcase"></i>
                   <div>
                     <strong>Job Type:</strong>
-                    <span>Full Time</span>
+                    <span>{{ $job->job_type }}</span>
                   </div>
                 </li>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
                   <div>
                     <strong>Location:</strong>
-                    <span>Karachi</span>
+                    <span>{{ $job->location }}</span>
                   </div>
                 </li>
+                @if($job->department)
                 <li>
                   <i class="fa-regular fa-building"></i>
                   <div>
                     <strong>Department:</strong>
-                    <span>GI Motility</span>
+                    <span>{{ $job->department }}</span>
                   </div>
                 </li>
+                @endif
               </ul>
             </div>
           </div>

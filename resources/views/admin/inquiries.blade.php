@@ -11,23 +11,34 @@
                                     <th>Sr.No</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Subject</th>
                                     <th>Phone</th>
-                                    <th class="w-50">Message</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Submitted</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>test</td>
-                                    <td>test@gmail.com</td>
-                                    <td>03000000002</td>
-                                    <td>Subject</td>
-                                    <td>this is dummy text message</td>
-                                </tr>
-                                <!-- <tr>
-                                    <td colspan="6">No records found.</td>
-                                </tr> -->
+                                @forelse($inquiries as $index => $inquiry)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $inquiry->name }}</td>
+                                        <td><a href="mailto:{{ $inquiry->email }}">{{ $inquiry->email }}</a></td>
+                                        <td><a href="tel:{{ $inquiry->phone }}">{{ $inquiry->phone }}</a></td>
+                                        <td>{{ $inquiry->subject ?? 'N/A' }}</td>
+                                        <td>{{ \Illuminate\Support\Str::limit($inquiry->message, 100) }}</td>
+                                        <td>
+                                            <span title="{{ $inquiry->created_at->format('F d, Y h:i A') }}">
+                                                {{ $inquiry->created_at->format('M d, Y') }}
+                                            </span>
+                                            <br>
+                                            <small class="text-muted">{{ $inquiry->created_at->diffForHumans() }}</small>
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="7" class="text-center">No inquiries found.</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
@@ -48,7 +59,7 @@
     <script>
         $(document).ready(function() {
             var table = $('#inquiries').DataTable({
-                order: [[0, 'desc']],
+                order: [[6, 'desc']], // Sort by Submitted Date column (index 6) in descending order
                 lengthChange: false,
                 buttons: ['copy', 'excel', 'pdf', 'print']
             });

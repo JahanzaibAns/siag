@@ -40,8 +40,9 @@
                 <h5 class="mb-0">Edit Job Posting</h5>
             </div>
             <div class="card-body">
-                <form method="POST" id="jobForm" enctype="multipart/form-data" action="">
+                <form method="POST" id="jobForm" enctype="multipart/form-data" action="{{ route('admin.jobs.update', $job) }}">
                     @csrf
+                    @method('PUT')
                     
                     <!-- Hidden fields for editor content -->
                     <input type="hidden" name="description" id="description-content">
@@ -53,26 +54,26 @@
                             <!-- Job Title -->
                             <div class="form-group">
                                 <label class="required">Job Title</label>
-                                <input type="text" name="title" class="form-control" placeholder="e.g. Consultant Gastroenterologist" id="title" required>
+                                <input type="text" name="title" class="form-control" placeholder="e.g. Consultant Gastroenterologist" id="title" value="{{ old('title', $job->title) }}" required>
                             </div>
 
                             <!-- Company Name -->
                             <div class="form-group">
                                 <label class="required">Company Name</label>
-                                <input type="text" name="company" class="form-control" placeholder="e.g. Sindh Institute of Advanced Gastroenterology (SIAG)" id="company" required>
+                                <input type="text" name="company" class="form-control" placeholder="e.g. Sindh Institute of Advanced Gastroenterology (SIAG)" id="company" value="{{ old('company', $job->company) }}" required>
                             </div>
 
                             <!-- Job Description (Summernote) -->
                             <div class="form-group">
                                 <label class="required">Job Description</label>
-                                <textarea id="summernote-description" class="form-control"></textarea>
+                                <textarea id="summernote-description" class="form-control">{{ old('description', $job->description) }}</textarea>
                                 <small class="text-muted">Describe the role, responsibilities, and ideal candidate</small>
                             </div>
 
                             <!-- Qualifications (Summernote) -->
                             <div class="form-group">
                                 <label>Qualifications & Requirements</label>
-                                <textarea id="summernote-qualifications" class="form-control"></textarea>
+                                <textarea id="summernote-qualifications" class="form-control">{{ old('qualifications', $job->qualifications) }}</textarea>
                             </div>
                         </div>
 
@@ -81,7 +82,7 @@
                             <!-- Location -->
                             <div class="form-group">
                                 <label class="required">Location</label>
-                                <input type="text" name="location" class="form-control" placeholder="e.g. Karachi" required>
+                                <input type="text" name="location" class="form-control" placeholder="e.g. Karachi" value="{{ old('location', $job->location) }}" required>
                             </div>
 
                             <!-- Employment Type -->
@@ -89,34 +90,34 @@
                                 <label class="required">Employment Type</label>
                                 <select name="job_type" class="form-control" required>
                                     <option value="">Select Type</option>
-                                    <option value="Full Time">Full Time</option>
-                                    <option value="Part Time">Part Time</option>
-                                    <option value="Contract">Contract</option>
+                                    <option value="Full Time" {{ old('job_type', $job->job_type) == 'Full Time' ? 'selected' : '' }}>Full Time</option>
+                                    <option value="Part Time" {{ old('job_type', $job->job_type) == 'Part Time' ? 'selected' : '' }}>Part Time</option>
+                                    <option value="Contract" {{ old('job_type', $job->job_type) == 'Contract' ? 'selected' : '' }}>Contract</option>
                                 </select>
                             </div>
 
                             <!-- Posted Date -->
                             <div class="form-group">
                                 <label class="required">Posted Date</label>
-                                <input type="date" name="posted_date" class="form-control" id="posted_date" required>
+                                <input type="date" name="posted_date" class="form-control" id="posted_date" value="{{ old('posted_date', $job->posted_date->format('Y-m-d')) }}" required>
                             </div>
 
                             <!-- Department (Optional) -->
                             <div class="form-group">
                                 <label>Department</label>
-                                <input type="text" name="department" class="form-control" placeholder="e.g. GI Motility">
+                                <input type="text" name="department" class="form-control" placeholder="e.g. GI Motility" value="{{ old('department', $job->department) }}">
                             </div>
 
                             <!-- Experience (Simple text field) -->
                             <div class="form-group">
                                 <label>Experience Required</label>
-                                <input type="text" name="experience" class="form-control" placeholder="e.g. Minimum 2 years">
+                                <input type="text" name="experience" class="form-control" placeholder="e.g. Minimum 2 years" value="{{ old('experience', $job->experience) }}">
                             </div>
 
                             <!-- Contact Email -->
                             <div class="form-group">
                                 <label class="required">Contact Email</label>
-                                <input type="email" name="contact_email" class="form-control" placeholder="hr@siagpk.org" required>
+                                <input type="email" name="contact_email" class="form-control" placeholder="hr@siagpk.org" value="{{ old('contact_email', $job->contact_email) }}" required>
                             </div>
 
                             <!-- Featured Image -->
@@ -208,9 +209,17 @@
             placeholder: 'List qualifications, requirements, and skills...'
         });
         
-        // Set today's date as default
-        var today = new Date().toISOString().split('T')[0];
-        $('#posted_date').val(today);
+        // Set date if not already set
+        if (!$('#posted_date').val()) {
+            var today = new Date().toISOString().split('T')[0];
+            $('#posted_date').val(today);
+        }
+        
+        // Set editor content from existing data
+        @if(isset($job))
+            $('#summernote-description').summernote('code', {!! json_encode($job->description) !!});
+            $('#summernote-qualifications').summernote('code', {!! json_encode($job->qualifications ?? '') !!});
+        @endif
         
         // Update email preview on change
         $('input[name="contact_email"]').on('keyup', function() {

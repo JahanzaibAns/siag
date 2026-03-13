@@ -5,7 +5,7 @@
     <div class="container">
       <h1 class="cs_page_title">Contact Us</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
         <li class="breadcrumb-item active">Contact Us</li>
       </ol>
     </div>
@@ -47,21 +47,38 @@
             <h2 class="cs_section_title">Questions? <br>Let our experts help! </h2>
           </div>
           <div class="cs_height_25 cs_height_lg_25"></div>
-          <form class="cs_contact_form row cs_gap_y_30">
+          
+          <form class="cs_contact_form row cs_gap_y_30" method="POST" action="{{ route('inquiries.store') }}">
+            @csrf
             <div class="col-md-12">
-              <input type="text" name="name" class="cs_form_field" placeholder="Your name">
+              <input type="text" name="name" class="cs_form_field @error('name') is-invalid @enderror" placeholder="Your name *" value="{{ old('name') }}" required>
+              @error('name')
+                <span class="invalid-feedback">{{ $message }}</span>
+              @enderror
             </div>
             <div class="col-md-12">
-              <input type="email" name="email" class="cs_form_field" placeholder="Your email">
+              <input type="email" name="email" class="cs_form_field @error('email') is-invalid @enderror" placeholder="Your email *" value="{{ old('email') }}" required>
+              @error('email')
+                <span class="invalid-feedback">{{ $message }}</span>
+              @enderror
             </div>
             <div class="col-md-12">
-              <input type="text" name="subject" class="cs_form_field" placeholder="Your Subject">
+              <input type="text" name="subject" class="cs_form_field @error('subject') is-invalid @enderror" placeholder="Your Subject" value="{{ old('subject') }}">
+              @error('subject')
+                <span class="invalid-feedback">{{ $message }}</span>
+              @enderror
             </div>
             <div class="col-md-12">
-              <input type="text" name="phone" class="cs_form_field" placeholder="Your phone">
+              <input type="text" name="phone" class="cs_form_field @error('phone') is-invalid @enderror" placeholder="Your phone *" value="{{ old('phone') }}" required>
+              @error('phone')
+                <span class="invalid-feedback">{{ $message }}</span>
+              @enderror
             </div>
             <div class="col-lg-12">
-              <textarea rows="5" name="message" class="cs_form_field" placeholder="Your comments"></textarea>
+              <textarea rows="5" name="message" class="cs_form_field @error('message') is-invalid @enderror" placeholder="Your comments *" required>{{ old('message') }}</textarea>
+              @error('message')
+                <span class="invalid-feedback">{{ $message }}</span>
+              @enderror
             </div>
            
             <div class="col-lg-12">
