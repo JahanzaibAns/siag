@@ -61,30 +61,31 @@ Route::get('/videos', function () {
     return view('videos');
 })->name('videos');
 
-// Admin Authentication Routes
+// Admin Authentication Routes (Public)
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [LoginController::class, 'login']);
-Route::post('/admin/logout', [LoginController::class, 'logout'])->name('admin.logout');
 
-// Admin Routes (Protected)
-Route::middleware('auth')->group(function () {
-    Route::get('/admin/dashboard', function () {
+// Admin Routes (Protected - All require authentication)
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    Route::get('/dashboard', function () {
         $appointmentCount = \App\Models\Appointment::count();
         $inquiryCount = \App\Models\Inquiry::count();
 
         return view('admin.dashboard', compact('appointmentCount', 'inquiryCount'));
-    })->name('admin.dashboard');
-    Route::get('/admin/bookings', [AdminAppointmentController::class, 'index'])->name('admin.bookings');
-    Route::get('/admin/bookings/{appointment}', [AdminAppointmentController::class, 'show'])->name('admin.bookings.details');
-    Route::put('/admin/bookings/{appointment}/status', [AdminAppointmentController::class, 'updateStatus'])->name('admin.bookings.update-status');
-    Route::delete('/admin/bookings/{appointment}', [AdminAppointmentController::class, 'destroy'])->name('admin.bookings.destroy');
-    Route::get('/admin/inquiries', [InquiryController::class, 'index'])->name('admin.inquiries');
-    Route::get('/admin/jobs', [JobController::class, 'index'])->name('admin.jobs');
-    Route::get('/admin/add-job', [JobController::class, 'create'])->name('admin.add.job');
-    Route::post('/admin/jobs', [JobController::class, 'store'])->name('admin.jobs.store');
-    Route::get('/admin/edit-job/{job}', [JobController::class, 'edit'])->name('admin.edit.job');
-    Route::put('/admin/jobs/{job}', [JobController::class, 'update'])->name('admin.jobs.update');
-    Route::delete('/admin/jobs/{job}', [JobController::class, 'destroy'])->name('admin.jobs.destroy');
-    Route::get('/admin/applicants', [ApplicantController::class, 'index'])->name('admin.applicants');
-    Route::get('/admin/applicants/{application}/download-cv', [ApplicantController::class, 'downloadCv'])->name('admin.applicants.download-cv');
+    })->name('dashboard');
+    Route::get('/bookings', [AdminAppointmentController::class, 'index'])->name('bookings');
+    Route::get('/bookings/{appointment}', [AdminAppointmentController::class, 'show'])->name('bookings.details');
+    Route::put('/bookings/{appointment}/status', [AdminAppointmentController::class, 'updateStatus'])->name('bookings.update-status');
+    Route::delete('/bookings/{appointment}', [AdminAppointmentController::class, 'destroy'])->name('bookings.destroy');
+    Route::get('/inquiries', [InquiryController::class, 'index'])->name('inquiries');
+    Route::get('/jobs', [JobController::class, 'index'])->name('jobs');
+    Route::get('/add-job', [JobController::class, 'create'])->name('add.job');
+    Route::post('/jobs', [JobController::class, 'store'])->name('jobs.store');
+    Route::get('/edit-job/{job}', [JobController::class, 'edit'])->name('edit.job');
+    Route::put('/jobs/{job}', [JobController::class, 'update'])->name('jobs.update');
+    Route::delete('/jobs/{job}', [JobController::class, 'destroy'])->name('jobs.destroy');
+    Route::get('/applicants', [ApplicantController::class, 'index'])->name('applicants');
+    Route::get('/applicants/{application}/download-cv', [ApplicantController::class, 'downloadCv'])->name('applicants.download-cv');
 });
