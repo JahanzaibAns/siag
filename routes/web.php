@@ -60,6 +60,12 @@ Route::get('/images', function () {
 Route::get('/videos', function () {
     return view('videos');
 })->name('videos');
+Route::get('/tenders', function () {
+    return view('tenders');
+})->name('tenders');
+Route::get('/donate', function () {
+    return view('donate');
+})->name('donate');
 
 // Admin Authentication Routes (Public)
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');

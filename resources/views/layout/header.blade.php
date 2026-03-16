@@ -109,11 +109,12 @@
                       <li><a href="{{ route('videos')}}">Videos</a></li>
                     </ul>
                   </li>
-                  <li><a href="javascript:void(0);">Tenders</a></li>
+                  <li><a href="{{ route('tenders') }}">Tenders</a></li>
+                  <li><a href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
               </div>
-              <a href="{{ route('contact') }}" class="cs_btn cs_style_1 cs_color_1">
-                <span>Contact Now </span>
+              <a href="{{ route('donate') }}" class="cs_btn cs_style_1 cs_color_1">
+                <span>Donate Now </span>
                 <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>

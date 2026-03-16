@@ -36,10 +36,10 @@
             <div class="cs_footer_widget">
               <h2 class="cs_footer_widget_title">Quick Links</h2>
               <ul class="cs_footer_widget_nav_list cs_mp_0">
-                <li><a href="javascript:void(0);">Contact Us</a></li>
-                <li><a href="javascript:void(0);">Careers</a></li>
-                <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                <li><a href="{{ route('careers') }}">Careers</a></li>
+                <li><a href="{{ route('donate') }}">Donations</a></li>
+                <li><a href="{{ route('services') }}">Services</a></li>
               </ul>
             </div>
           </div>
@@ -74,10 +74,10 @@
           <div class="cs_footer_bottom_in">
             <p class="cs_footer_copyright mb-0">Copyright © 2026 SIAG, All Rights Reserved.</p>
             <ul class="cs_footer_menu cs_mp_0">              
-              <li><a href="javascript:void(0);">About Us</a></li>                
-              <li><a href="javascript:void(0);">Events</a></li>
-              <li><a href="javascript:void(0);">News</a></li>
-              <li><a href="javascript:void(0);">Services</a></li>
+              <li><a href="{{ route('index') }}">Home</a></li>                
+              <li><a href="{{ route('events') }}">Events</a></li>
+              <li><a href="{{ route('services') }}">Services</a></li>
+              <li><a href="{{ route('tenders') }}">Tenders</a></li>
             </ul>
           </div>
         </div>
