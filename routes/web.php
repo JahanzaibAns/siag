@@ -66,6 +66,49 @@ Route::get('/tenders', function () {
 Route::get('/donate', function () {
     return view('donate');
 })->name('donate');
+Route::get('/ogd-endoscopy', function () {
+    return view('ogd-endoscopy');
+})->name('ogd.endoscopy');
+Route::get('/colonoscopy', function () {
+    return view('colonoscopy');
+})->name('colonoscopy');
+Route::get('/ercp', function () {
+    return view('ercp');
+})->name('ercp');
+Route::get('/eswl', function () {
+    return view('eswl');
+})->name('eswl');
+Route::get('/spyglass', function () {
+    return view('spyglass');
+})->name('spyglass');
+Route::get('/eus', function () {
+    return view('eus');
+})->name('eus');
+Route::get('/eus-rfa', function () {
+    return view('eus-rfa');
+})->name('eus.rfa');
+Route::get('/esophageal-manometry', function () {
+    return view('esophageal-manometry');
+})->name('esophageal.manometry');
+Route::get('/fibroscan', function () {
+    return view('fibroscan');
+})->name('fibroscan');
+Route::get('/endoscopy-unit', function () {
+    return view('endoscopy-unit');
+})->name('endoscopy.unit');
+Route::get('/sedation-and-anesthesia-unit', function () {
+    return view('sedation-and-anesthesia-unit');
+})->name('sedation.and.anesthesia.unit');
+Route::get('/clinical-research-and-trials', function () {
+    return view('clinical-research-and-trials');
+})->name('clinical.research.and.trials');
+Route::get('/advanced-diagnostic-technologies', function () {
+    return view('advanced-diagnostic-technologies');
+})->name('advanced.diagnostic.technologies');
+Route::get('/innovation-and-technology-lab', function () {
+    return view('innovation-and-technology-lab');
+})->name('innovation.and.technology.lab');
+
 
 // Admin Authentication Routes (Public)
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');

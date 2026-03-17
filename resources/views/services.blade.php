@@ -42,7 +42,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">OGD Endoscopy</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('ogd.endoscopy') }}">OGD Endoscopy</a></h3>
                     <p class="cs_card_subtitle mb-0">Upper gastrointestinal endoscopy to diagnose and treat conditions in the upper GI tract.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">01</div>
@@ -58,7 +58,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Colonoscopy</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('colonoscopy') }}">Colonoscopy</a></h3>
                     <p class="cs_card_subtitle mb-0">Examination of the large bowel and distal part of the small bowel with a camera.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">02</div>
@@ -74,7 +74,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">ERCP</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('ercp') }}">ERCP</a></h3>
                     <p class="cs_card_subtitle mb-0">Endoscopic Retrograde Cholangiopancreatography for diagnosing and treating bile duct issues.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">03</div>
@@ -90,7 +90,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">ESWL</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('eswl') }}">ESWL</a></h3>
                     <p class="cs_card_subtitle mb-0">Extracorporeal Shock Wave Lithotripsy for non-invasive treatment of kidney stones.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">04</div>
@@ -106,7 +106,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Spyglass</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('spyglass') }}">Spyglass</a></h3>
                     <p class="cs_card_subtitle mb-0">Advanced cholangioscopy for direct visualization and treatment of bile duct conditions.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">05</div>
@@ -122,7 +122,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">EUS</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('eus') }}">EUS</a></h3>
                     <p class="cs_card_subtitle mb-0">Endoscopic Ultrasound for detailed imaging of digestive tract and surrounding organs.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">06</div>
@@ -138,7 +138,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">EUS RFA</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('eus.rfa') }}">EUS RFA</a></h3>
                     <p class="cs_card_subtitle mb-0">Endoscopic Ultrasound-guided Radiofrequency Ablation for tumor treatment.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">07</div>
@@ -154,7 +154,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Esophageal Manometry</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('esophageal.manometry') }}">Esophageal Manometry</a></h3>
                     <p class="cs_card_subtitle mb-0">Test measuring muscle contractions and coordination in the esophagus.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">08</div>
@@ -170,7 +170,7 @@
                 </a> -->
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Fibroscan</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('fibroscan') }}">Fibroscan</a></h3>
                     <p class="cs_card_subtitle mb-0">Non-invasive assessment of liver fibrosis and steatosis.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">09</div>

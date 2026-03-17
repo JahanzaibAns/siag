@@ -44,7 +44,7 @@
               </div>
               <h3 class="iconbox_index">01</h3>
             </div>
-            <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Endoscopy Unit</a></h3>
+            <h3 class="cs_iconbox_title"><a href="{{ route('endoscopy.unit') }}">Endoscopy Unit</a></h3>
             <p class="cs_iconbox_subtitle m-0">Advanced diagnostic and therapeutic endoscopic procedures with precision</p>
           </div>
         </div>
@@ -60,7 +60,7 @@
               </div>
               <h3 class="iconbox_index">02</h3>
             </div>
-            <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Advanced Diagnostic Technologies</a></h3>
+            <h3 class="cs_iconbox_title"><a href="{{ route('advanced.diagnostic.technologies') }}">Advanced Diagnostic Technologies</a></h3>
             <p class="cs_iconbox_subtitle m-0">State-of-the-art imaging and molecular diagnostics for accurate results</p>
           </div>
         </div>
@@ -76,7 +76,7 @@
               </div>
               <h3 class="iconbox_index">03</h3>
             </div>
-            <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Innovation and Technology Lab</a></h3>
+            <h3 class="cs_iconbox_title"><a href="{{ route('innovation.and.technology.lab') }}">Innovation and Technology Lab</a></h3>
             <p class="cs_iconbox_subtitle m-0">Pioneering medical breakthroughs through cutting-edge research</p>
           </div>
         </div>
@@ -92,7 +92,7 @@
               </div>
               <h3 class="iconbox_index">04</h3>
             </div>
-            <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Sedation and Anesthesia Unit</a></h3>
+            <h3 class="cs_iconbox_title"><a href="{{ route('sedation.and.anesthesia.unit') }}">Sedation and Anesthesia Unit</a></h3>
             <p class="cs_iconbox_subtitle m-0">Patient-centered sedation and pain management by expert anesthesiologists</p>
           </div>
         </div>
@@ -108,7 +108,7 @@
               </div>
               <h3 class="iconbox_index">05</h3>
             </div>
-            <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Clinical Research and Trials</a></h3>
+            <h3 class="cs_iconbox_title"><a href="{{ route('clinical.research.and.trials') }}">Clinical Research and Trials</a></h3>
             <p class="cs_iconbox_subtitle m-0">Advancing medicine through innovative clinical research programs</p>
           </div>
         </div>

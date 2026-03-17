@@ -47,11 +47,15 @@
             <div class="cs_footer_widget">
               <h2 class="cs_footer_widget_title">Services</h2>
               <ul class="cs_footer_widget_nav_list cs_mp_0">
-                <li><a href="javascript:void(0);">Endoscopy Unit</a></li>
-                <li><a href="javascript:void(0);">Advanced Diagnostic Technologies</a></li>
-                <li><a href="javascript:void(0);">Innovation and Technology Lab</a></li>
-                <li><a href="javascript:void(0);">Sedation and Anesthesia Unit</a></li>
-                <li><a href="javascript:void(0);">Clinical Research and Trials</a></li>
+                <li><a href="{{ route('ogd.endoscopy') }}">OGD Endoscopy</a></li>
+                <li><a href="{{ route('colonoscopy') }}">Colonoscopy</a></li>
+                <li><a href="{{ route('ercp') }}">ERCP</a></li>
+                <li><a href="{{ route('eswl') }}">ESWL</a></li>
+                <li><a href="{{ route('spyglass') }}">Spyglass</a></li>
+                <li><a href="{{ route('eus') }}">EUS</a></li>
+                <li><a href="{{ route('eus.rfa') }}">EUS RFA</a></li>
+                <li><a href="{{ route('esophageal.manometry') }}">Esophageal Manometry</a></li>
+                <li><a href="{{ route('fibroscan') }}">Fibroscan</a></li>
               </ul>
             </div>
           </div>
@@ -99,6 +103,7 @@
     <script src="{{ asset('assets/js/odometer.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         @if(session('success'))
             Swal.fire({
