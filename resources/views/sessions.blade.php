@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Sessions | SIAG
+@endsection
+@section('meta_description')
+SIAG academic sessions: UK training guide, AI in research, occupational safety, grant writing. CME workshops and career guidance.
+@endsection
 @section('content')
 <!-- Start Page Heading -->
 <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"
@@ -36,10 +42,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">01</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">Research Reinvented: The Power of Artificial Intelligence</a></h3>
+                <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('session.ai.sessions') }}">Research Reinvented: The Power of Artificial Intelligence</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('session.ai.sessions') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -51,10 +57,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">02</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">Occupational Safety Session: Managing Needle-stick and Sharps Injuries</a></h3>
+                <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('session.occupational.safety') }}">Occupational Safety Session: Managing Needle-stick and Sharps Injuries</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('session.occupational.safety') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -66,10 +72,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">03</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">Grant Writing Workshop: Enhancing Research Capacity</a></h3>
+                <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('session.grant.writing.workshop') }}">Grant Writing Workshop: Enhancing Research Capacity</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('session.grant.writing.workshop') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -81,10 +87,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">04</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">Advancing Careers Abroad: A Guide to UK Gastroenterology Training</a></h3>
+                <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('session.advancing.careers.abroad') }}">Advancing Careers Abroad: A Guide to UK Gastroenterology Training</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('session.advancing.careers.abroad') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>

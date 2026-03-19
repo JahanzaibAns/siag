@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Tenders | SIAG
+@endsection
+@section('meta_description')
+Current tenders and procurement notices from SIAG. Sindh Institute of Advanced Endoscopy and Gastroenterology, Karachi.
+@endsection
 @section('content')
   <!-- Start Page Heading -->
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/hero_slider_3.jpg">

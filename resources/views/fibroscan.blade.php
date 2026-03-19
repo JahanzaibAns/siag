@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+FibroScan | SIAG
+@endsection
+@section('meta_description')
+FibroScan liver assessment at SIAG. Non-invasive liver stiffness and fatty liver evaluation. Free at Civil Hospital Karachi.
+@endsection
 @section('content')
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/hero_slider_3.jpg">
     <div class="container">

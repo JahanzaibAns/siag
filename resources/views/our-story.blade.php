@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Our Story | SIAG
+@endsection
+@section('meta_description')
+How SIAG grew from a two-room unit to Pakistan’s leading public-sector institute for advanced endoscopy and gastroenterology care in Karachi.
+@endsection
 @section('content')
   <!-- Start Page Heading -->
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="{{asset('assets/img/banners/our-doctors-bg.jpg')}}">

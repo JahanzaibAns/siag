@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Leadership | SIAG
+@endsection
+@section('meta_description')
+SIAG leadership: Executive Director, faculty, and governance driving free world-class gastroenterology and endoscopy services in Karachi.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"

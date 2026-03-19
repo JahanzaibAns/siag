@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Newsletter | SIAG
+@endsection
+@section('meta_description')
+SIAG newsletter. Updates on gastroenterology, endoscopy, research, and events at Sindh Institute of Advanced Endoscopy and Gastroenterology.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"

@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="ThemeServices">
+    <meta name="author" content="SIAG - Sindh Institute of Advanced Endoscopy and Gastroenterology">
+    <meta name="description" content="@yield('meta_description', 'SIAG provides world-class gastroenterology and endoscopy care, training, and research in Karachi. Free advanced GI diagnostics and procedures at Civil Hospital.')">
     <!-- Favicon Icon -->
     <link rel="icon" href="{{asset('assets/img/cropped-SIAG-final-logo-1-32x32.webp')}}" sizes="32x32" />
     <link rel="icon" href="{{asset('assets/img/cropped-SIAG-final-logo-1-192x192.webp')}}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{asset('assets/img/cropped-SIAG-final-logo-1-180x180.webp')}}" />
     <!-- Site Title -->
-    <title>SIAG</title>
+    <title>@yield('title', 'SIAG – Sindh Institute of Advanced Endoscopy & Gastroenterology')</title>
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">

@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Mission & Vision | SIAG
+@endsection
+@section('meta_description')
+SIAG’s mission: equitable, innovative gastroenterology care. Our vision for training, research, and free advanced GI services in Pakistan.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"

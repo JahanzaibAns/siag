@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Videos | SIAG
+@endsection
+@section('meta_description')
+Watch SIAG videos: workshops, procedures, and gastroenterology education from Sindh Institute of Advanced Endoscopy and Gastroenterology.
+@endsection
 @section('content')
 
 <!-- Start Page Heading -->

@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Our Team Images | SIAG
+@endsection
+@section('meta_description')
+Gallery of SIAG team and facility images. Sindh Institute of Advanced Endoscopy and Gastroenterology, Civil Hospital Karachi.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"

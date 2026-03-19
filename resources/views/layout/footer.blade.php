@@ -63,11 +63,11 @@
             <div class="cs_footer_widget">
               <h2 class="cs_footer_widget_title">Our Doctors</h2>
               <ul class="cs_footer_widget_nav_list cs_mp_0">
-                <li><a href="javascript:void(0);">Prof Saad Khalid Niaz</a></li>
-                <li><a href="javascript:void(0);">Prof Sajida Qureshi</a></li>
-                <li><a href="javascript:void(0);">Dr Shahriyar Ghazanfar</a></li>
-                <li><a href="javascript:void(0);">Dr Aftab Leghari</a></li>
-                <li><a href="javascript:void(0);">Dr Babar Matin</a></li>
+                <li><a href="{{ route('dr-saad-khalid-niaz') }}">Prof Saad Khalid Niaz</a></li>
+                <li><a href="{{ route('dr-sajida-qureshi') }}">Prof Sajida Qureshi</a></li>
+                <li><a href="{{ route('dr-shanil-kadir') }}">Dr. Shanil Kadir</a></li>
+                <li><a href="{{ route('dr-aftab-leghari') }}">Dr Aftab Leghari</a></li>
+                <li><a href="{{ route('dr-babar-matin') }}">Dr Babar Matin</a></li>
               </ul>
             </div>
           </div>

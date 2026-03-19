@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Workshops | SIAG
+@endsection
+@section('meta_description')
+SIAG hands-on workshops: Colonoscopy, ERCP, EUS, Advanced Techniques, Train the Trainer. Dates and registration for gastroenterology training.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"
@@ -60,7 +66,7 @@
                     </div>
                     <h3 class="iconbox_index">01</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Colonoscopy</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('colonoscopy.workshop') }}">Colonoscopy</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Complete large bowel examination</p>
                 </div>
             </div>
@@ -75,7 +81,7 @@
                     </div>
                     <h3 class="iconbox_index">02</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">ERCP</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('ercp.workshop') }}">ERCP</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Bile duct and pancreatic interventions</p>
                 </div>
             </div>
@@ -117,7 +123,7 @@
                         </div>
                         <h3 class="iconbox_index">03</h3>
                     </div>
-                    <h3 class="cs_iconbox_title"><a href="javascript:void(0);">EUS</a></h3>
+                    <h3 class="cs_iconbox_title"><a href="{{ route('eus.workshop') }}">EUS</a></h3>
                     <p class="cs_iconbox_subtitle m-0">Endoscopic ultrasound imaging</p>
                 </div>
             </div>
@@ -132,7 +138,7 @@
                         </div>
                         <h3 class="iconbox_index">04</h3>
                     </div>
-                    <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Advanced Techniques in Endoscopy Workshop</a></h3>
+                    <h3 class="cs_iconbox_title"><a href="{{ route('advanced.techniques.endoscopy.workshop') }}">Advanced Techniques in Endoscopy Workshop</a></h3>
                     <p class="cs_iconbox_subtitle m-0">Advanced endoscopic resection techniques and tissue sampling</p>
                 </div>
             </div>
@@ -147,7 +153,7 @@
                         </div>
                         <h3 class="iconbox_index">05</h3>
                     </div>
-                    <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Train the Trainer Workshop</a></h3>
+                    <h3 class="cs_iconbox_title"><a href="{{ route('train.the.trainer.workshop') }}">Train the Trainer Workshop</a></h3>
                     <p class="cs_iconbox_subtitle m-0">Hands-on training and education methodologies</p>
                 </div>
             </div>

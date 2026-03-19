@@ -1,197 +1,51 @@
 @extends('layout.main')
+@section('title')
+SIAG – Sindh Institute of Advanced Endoscopy & Gastroenterology | Karachi
+@endsection
+@section('meta_description')
+SIAG offers free world-class gastroenterology, endoscopy, and hepatology care at Civil Hospital Karachi. Advanced diagnostics, ERCP, EUS, training & research.
+@endsection
 @section('content')
-    <!-- Start Hero Section -->
-    <section class="position-relative">
-      <div class="cs_hero_slider_thumb slick-slider">
-        <div class="cs_hero_slider_thumb_item">
-          <div class="cs_hero cs_style_1 cs_center cs_bg_filed" data-src="{{asset('assets/img/banners/hero_slider_1.jpg')}}">
-            <div class="container">
-              <div class="cs_hero_text">
-                <div class="cs_hero_text_in">
-                  <h1 class="cs_hero_title">Built with <span>Excellence</span> to Heal.</h1>
-                  <p class="cs_hero_subtitle">World-class healthcare with advanced technology and compassionate experts dedicated to your well-being.</p>
-                  <!-- <div class="cs_hero_info">
-                    <h3>24/7 Emergency Care</h3>
-                    <p>Call Us at: 021-32750524-6</p>
-                  </div> -->
-                  <div class="cs_hero_btns">
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
-                      <span>Contact Now </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_2">
-                      <span>Discover More </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="cs_hero_shape">
-                  <img src="{{asset('assets/img/icons/hero_icon.png')}}" alt="Icon" class="cs_spinner_img">
-                </div>
-              </div>
+    <section class="position-relative cs_hero cs_style_1 cs_center overflow-hidden">
+      <video autoplay muted loop playsinline class="cs_bg_video">
+        <source src="https://www.koder360.com/siag/public/assets/video/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+      <div class="cs_video_overlay"></div>
+    
+      <div class="container position-relative">
+        <div class="cs_hero_text">
+          <div class="cs_hero_text_in">
+            
+            <h1 class="cs_hero_title">
+              Built with <span>Excellence</span> to Heal.
+            </h1>
+    
+            <p class="cs_hero_subtitle">
+              World-class healthcare with advanced technology and compassionate experts dedicated to your well-being.
+            </p>
+    
+            <div class="cs_hero_btns">
+              <a href="{{ route('contact') }}" class="cs_btn cs_style_1 cs_color_1">
+                <span>Contact Now </span>
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+    
+              <a href="{{ route('our.story') }}" class="cs_btn cs_style_1 cs_color_2">
+                <span>Discover More </span>
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
             </div>
+    
           </div>
-        </div>
-        <div class="cs_hero_slider_thumb_item">
-          <div class="cs_hero cs_style_1 cs_center cs_bg_filed" data-src="{{asset('assets/img/banners/hero_slider_2.png')}}">
-            <div class="container">
-              <div class="cs_hero_text">
-                <div class="cs_hero_text_in">
-                <h1 class="cs_hero_title">Founded on a <span>Vision</span> to Serve.</h1>
-                <p class="cs_hero_subtitle">Two decades of compassionate, personalized healthcare with integrity and respect for our community.</p>
-                  <!-- <div class="cs_hero_info">
-                    <h3>Expert Medical Team</h3>
-                    <p>Call Us at: 021-32750524-6</p>
-                  </div> -->
-                  <div class="cs_hero_btns">
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
-                      <span>Contact Now </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_2">
-                      <span>Discover More </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="cs_hero_shape">
-                  <img src="{{asset('assets/img/icons/hero_icon.png')}}" alt="Icon" class="cs_spinner_img">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs_hero_slider_thumb_item">
-          <div class="cs_hero cs_style_1 cs_center cs_bg_filed" data-src="{{asset('assets/img/banners/hero_slider_3.jpg')}}">
-            <div class="container">
-              <div class="cs_hero_text">
-                <div class="cs_hero_text_in">
-                <h1 class="cs_hero_title">Advanced <span>Medical</span> Care.</h1>
-                <p class="cs_hero_subtitle">Comprehensive healthcare solutions using cutting-edge technology and evidence-based practices—from routine check-ups to complex procedures.</p>
-                  <!-- <div class="cs_hero_info">
-                    <h3>Specialized Departments</h3>
-                    <p>Call Us at: 021-32750524-6</p>
-                  </div> -->
-                  <div class="cs_hero_btns">
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
-                      <span>Contact Now </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_2">
-                      <span>Discover More </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="cs_hero_shape">
-                  <img src="{{asset('assets/img/icons/hero_icon.png')}}" alt="Icon" class="cs_spinner_img">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs_hero_slider_thumb_item">
-          <div class="cs_hero cs_style_1 cs_center cs_bg_filed" data-src="{{asset('assets/img/banners/hero_slider_4.jpg')}}">
-            <div class="container">
-              <div class="cs_hero_text">
-                <div class="cs_hero_text_in">
-                <h1 class="cs_hero_title">Your Health, <span>Our Priority.</span></h1>
-                <p class="cs_hero_subtitle">Patient-centered care with personalized attention, clear communication, and highest quality in a supportive environment.</p>
-                  <!-- <div class="cs_hero_info">
-                    <h3>Compassionate Care</h3>
-                    <p>Call Us at: 021-32750524-6</p>
-                  </div> -->
-                  <div class="cs_hero_btns">
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
-                      <span>Contact Now </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_2">
-                      <span>Discover More </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="cs_hero_shape">
-                  <img src="{{asset('assets/img/icons/hero_icon.png')}}" alt="Icon" class="cs_spinner_img">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs_hero_slider_thumb_item">
-          <div class="cs_hero cs_style_1 cs_center cs_bg_filed" data-src="{{asset('assets/img/banners/hero_slider_2.png')}}">
-            <div class="container">
-              <div class="cs_hero_text">
-                <div class="cs_hero_text_in">
-                <h1 class="cs_hero_title">Healing with <span>Excellence</span> & Compassion.</h1>
-                <p class="cs_hero_subtitle">Advanced medical expertise meets genuine human connection—guiding you through every step with skill, empathy, and dedication to your recovery.</p>
-                  <!-- <div class="cs_hero_info">
-                    <h3>Your Trusted Healthcare Partner</h3>
-                    <p>Call Us at: 021-32750524-6</p>
-                  </div> -->
-                  <div class="cs_hero_btns">
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
-                      <span>Contact Now </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_2">
-                      <span>Discover More </span>
-                      <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="cs_hero_shape">
-                  <img src="{{asset('assets/img/icons/hero_icon.png')}}" alt="Icon" class="cs_spinner_img">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_hero_slider_nav slick-slider">
-        <div class="cs_hero_slider_thumb_mini">
-          <img src="{{asset('assets/img/banners/hero_slider_1.jpg')}}" alt="">
-        </div>
-        <div class="cs_hero_slider_thumb_mini">
-          <img src="{{asset('assets/img/banners/hero_slider_2.png')}}" alt="">
-        </div>
-        <div class="cs_hero_slider_thumb_mini">
-          <img src="{{asset('assets/img/banners/hero_slider_3.jpg')}}" alt="">
-        </div>
-        <div class="cs_hero_slider_thumb_mini">
-          <img src="{{asset('assets/img/banners/hero_slider_4.jpg')}}" alt="">
-        </div>
-        <div class="cs_hero_slider_thumb_mini">
-          <img src="{{asset('assets/img/banners/hero_slider_2.png')}}" alt="">
         </div>
       </div>
     </section>
+    
+    
     <!-- End Hero Section -->
-    <!-- Start CTA Section -->
-    <section class="cs_cta cs_style_1 cs_blue_bg position-relative overflow-hidden">
-      <div class="container">
-        <div class="cs_cta_in">
-          <div class="cs_cta_left">
-            <div class="cs_cta_thumb wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">
-              <img src="{{asset('assets/img/cta_img_1.jpg')}}" alt="">
-            </div>
-            <div class="cs_cta_info">
-              <h2 class="cs_cta_title">Meet The Team Support Medical Service. </h2>
-              <p class="cs_cta_subtitle">For us, there are no minor aspects, because a quality</p>
-            </div>
-          </div>
-          <div class="cs_cta_right">
-            <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_3">
-              <span>Booking Now </span>
-              <i class="fa-solid fa-angles-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cs_cta_shape"></div>
-    </section>
-    <!-- End CTA Section -->
+
     <!-- Start About Section -->
     <section class="cs_about cs_style_1 position-relative">
       <div class="cs_height_120 cs_height_lg_80"></div>
@@ -250,9 +104,9 @@
                 <div class="cs_about_iconbox_icon cs_center">
                   <i class="fa-regular fa-circle-check"></i>
                 </div>
-                <p class="cs_about_iconbox_subtitle">Where service meets innovation. <a href="#">READ MORE +</a></p>
+                <p class="cs_about_iconbox_subtitle">Where service meets innovation. <a href="{{ route('our.story') }}">READ MORE +</a></p>
               </div>
-              <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+              <a href="{{ route('our.story') }}" class="cs_btn cs_style_1 cs_color_1">
                 <span>About More </span>
                 <i class="fa-solid fa-angles-right"></i>
               </a>
@@ -332,7 +186,7 @@
                     </div>
                     <h3 class="iconbox_index">01</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">OGD (Endoscopy)</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('ogd.endoscopy') }}">OGD (Endoscopy)</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Upper GI diagnostic and therapeutic procedures</p>
                 </div>
             </div>
@@ -347,7 +201,7 @@
                     </div>
                     <h3 class="iconbox_index">02</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Colonoscopy</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('colonoscopy') }}">Colonoscopy</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Complete large bowel examination</p>
                 </div>
             </div>
@@ -362,7 +216,7 @@
                     </div>
                     <h3 class="iconbox_index">03</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">ERCP</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('ercp') }}">ERCP</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Bile duct and pancreatic interventions</p>
                 </div>
             </div>
@@ -377,7 +231,7 @@
                     </div>
                     <h3 class="iconbox_index">04</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">ESWL</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('eswl') }}">ESWL</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Shock wave lithotripsy for stones</p>
                 </div>
             </div>
@@ -392,7 +246,7 @@
                     </div>
                     <h3 class="iconbox_index">05</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Spyglass</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('spyglass') }}">Spyglass</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Cholangioscopy for bile duct visualization</p>
                 </div>
             </div>
@@ -407,7 +261,7 @@
                     </div>
                     <h3 class="iconbox_index">06</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">EUS</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('eus') }}">EUS</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Endoscopic ultrasound imaging</p>
                 </div>
             </div>
@@ -422,7 +276,7 @@
                     </div>
                     <h3 class="iconbox_index">07</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">EUS RFA</a></h3>
+                <h3 class="cs_iconbox_title"><a href="{{ route('eus.rfa') }}">EUS RFA</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Radiofrequency ablation guided by EUS</p>
                 </div>
             </div>
@@ -437,7 +291,7 @@
                     </div>
                     <h3 class="iconbox_index">08</h3>
                 </div>
-                <h3 class="cs_iconbox_title"><a href="javascript:void(0);">Esophageal Manometry</a></h3>
+                  <h3 class="cs_iconbox_title"><a href="{{ route('esophageal.manometry') }}">Esophageal Manometry</a></h3>
                 <p class="cs_iconbox_subtitle m-0">Motility and pressure studies</p>
                 </div>
             </div>
@@ -447,7 +301,7 @@
                 <img src="{{asset('assets/img/icons/service_footer_icon_1.png')}}" alt="Icon">
             </div>
             <div class="cs_service_footer_text cs_medium">
-                Advanced care with dignity—high-quality GI treatment accessible to everyone. <a href="#">VIEW ALL SERVICES <i class="fa-solid fa-angles-right"></i></a>
+                Advanced care with dignity—high-quality GI treatment accessible to everyone. <a href="{{ route('services')}}">VIEW ALL SERVICES <i class="fa-solid fa-angles-right"></i></a>
             </div>
             </div>
         </div>
@@ -472,11 +326,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-saad-khalid-niaz') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/dr-saad.jpg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Saad Khalid Niaz</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-saad-khalid-niaz') }}">Dr. Saad Khalid Niaz</a></h3>
                     <p class="cs_team_subtitle">Gastroenterologist & Hepatologist</p>
                   </div>
                 </div>
@@ -484,11 +338,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-sajida-qureshi') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/team2.jpeg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Sajida Qureshi</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-sajida-qureshi') }}">Dr. Sajida Qureshi</a></h3>
                     <p class="cs_team_subtitle">Upper GI & Bariatric Surgeon</p>
                   </div>
                 </div>
@@ -496,11 +350,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-babar-matin') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/dr-babar.jpg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Babar Matin</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-babar-matin') }}">Dr. Babar Matin</a></h3>
                     <p class="cs_team_subtitle">Incharge GI MOTILITY</p>
                   </div>
                 </div>
@@ -508,11 +362,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-shanil-kadir') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/team4.jpeg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Shahriyar Ghazanfar</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-shanil-kadir') }}">Dr. Shanil Kadir</a></h3>
                     <p class="cs_team_subtitle">FCPS (General Surgery)</p>
                   </div>
                 </div>
@@ -520,11 +374,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-aftab-leghari') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/team5.jpeg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Aftab Leghari</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-aftab-leghari') }}">Dr. Aftab Leghari</a></h3>
                     <p class="cs_team_subtitle">FCPS (General Surgery)</p>
                   </div>
                 </div>
@@ -532,11 +386,11 @@
               <div class="cs_slide">
                 <div class="cs_team cs_style_1 cs_blue_bg">
                   <div class="cs_team_shape cs_accent_bg"></div>
-                  <a href="javascript:void(0);" class="cs_team_thumbnail">
+                  <a href="{{ route('dr-shanil-kadir') }}" class="cs_team_thumbnail">
                     <img src="{{asset('assets/img/team/team6.jpeg')}}" alt="Team Thumbnail">
                   </a>
                   <div class="cs_team_bio">
-                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="javascript:void(0);">Dr. Shanil Kadir</a></h3>
+                    <h3 class="cs_team_title cs_extra_bold mb-0"><a href="{{ route('dr-shanil-kadir') }}">Dr. Shanil Kadir</a></h3>
                     <p class="cs_team_subtitle">CCT G(I)M & Gastroenterology</p>
                   </div>
                 </div>
@@ -581,8 +435,8 @@
                     <img src="{{asset('assets/img/icons/service_icon_10.png')}}" alt="Icon">
                   </div>
                   <div class="cs_iconbox_text">
-                    <h3 class="cs_iconbox_title">24/7 Emergency Care</h3>
-                    <p class="cs_iconbox_subtitle">Round-the-clock urgent services</p>
+                    <h3 class="cs_iconbox_title">Emergency &amp; Urgent Care</h3>
+                    <p class="cs_iconbox_subtitle">Urgent GI care when you need it</p>
                   </div>
                 </div>
                 <div class="cs_iconbox cs_style_3">
@@ -647,12 +501,12 @@
           <div class="row cs_gap_y_30">
             <div class="col-lg-3">
               <div class="cs_card cs_style_1">
-                <a href="#" class="cs_card_thumbnail d-block">
+                <a href="{{ route('clinical.research.and.trials') }}" class="cs_card_thumbnail d-block">
                   <img src="{{asset('assets/img/departments/clinical-trails.jpeg')}}" alt="Project Image" class="w-100">
                 </a>
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Clinical Research and Trials</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('clinical.research.and.trials') }}">Clinical Research and Trials</a></h3>
                     <p class="cs_card_subtitle mb-0">We businesss standard chunk of Ipsum used since is Agency & Star tup.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">01</div>
@@ -661,12 +515,12 @@
             </div>
             <div class="col-lg-3">
               <div class="cs_card cs_style_1">
-                <a href="#" class="cs_card_thumbnail d-block">
+                <a href="{{ route('advanced.diagnostic.technologies') }}" class="cs_card_thumbnail d-block">
                   <img src="{{asset('assets/img/departments/diagnostic.jpeg')}}" alt="Project Image" class="w-100">
                 </a>
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Advanced Diagnostic Technologies</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('advanced.diagnostic.technologies') }}">Advanced Diagnostic Technologies</a></h3>
                     <p class="cs_card_subtitle mb-0">We businesss standard chunk of Ipsum used since is Agency & Star tup.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">02</div>
@@ -675,12 +529,12 @@
             </div>
             <div class="col-lg-3">
               <div class="cs_card cs_style_1">
-                <a href="#" class="cs_card_thumbnail d-block">
+                <a href="{{ route('endoscopy.unit') }}" class="cs_card_thumbnail d-block">
                   <img src="{{asset('assets/img/departments/endoscopy.jpeg')}}" alt="Project Image" class="w-100">
                 </a>
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Endoscopy Unit</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('endoscopy.unit') }}">Endoscopy Unit</a></h3>
                     <p class="cs_card_subtitle mb-0">We businesss standard chunk of Ipsum used since is Agency & Star tup.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">03</div>
@@ -689,12 +543,12 @@
             </div>
             <div class="col-lg-3">
               <div class="cs_card cs_style_1">
-                <a href="#" class="cs_card_thumbnail d-block">
+                <a href="{{ route('innovation.and.technology.lab') }}" class="cs_card_thumbnail d-block">
                   <img src="{{asset('assets/img/departments/innovation.jpeg')}}" alt="Project Image" class="w-100">
                 </a>
                 <div class="cs_card_info_wrapper">
                   <div class="cs_card_text">
-                    <h3 class="cs_card_title"><a href="#">Innovation and Technology Lab</a></h3>
+                    <h3 class="cs_card_title"><a href="{{ route('innovation.and.technology.lab') }}">Innovation and Technology Lab</a></h3>
                     <p class="cs_card_subtitle mb-0">We businesss standard chunk of Ipsum used since is Agency & Star tup.</p>
                   </div>
                   <div class="cs_card_index cs_center rounded-circle">04</div>
@@ -794,7 +648,7 @@
                       our vision is to deliver equitable, innovative, and patient-centered
                       gastroenterological care. We aspire to transform.
                       </p>
-                      <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+                      <a href="{{ route('mission.vision') }}" class="cs_btn cs_style_1 cs_color_1">
                         <span>Read More </span>
                         <i class="fa-solid fa-angles-right"></i>
                       </a>
@@ -820,7 +674,7 @@
                         reimagined what a public healthcare institute can look like
                       </p>
                       
-                      <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+                      <a href="{{ route('leadership') }}" class="cs_btn cs_style_1 cs_color_1">
                         <span>Read More </span>
                         <i class="fa-solid fa-angles-right"></i>
                       </a>
@@ -845,7 +699,7 @@
                         and Gastroenterology (SIAG) began with a bold vision: to
                         bring world-class endoscopic care to the heart of Pakistan’s public healthcare system.
                       </p>
-                      <a href="javascript:void(0);" class="cs_btn cs_style_1 cs_color_1">
+                      <a href="{{ route('our.story') }}" class="cs_btn cs_style_1 cs_color_1">
                         <span>Read More </span>
                         <i class="fa-solid fa-angles-right"></i>
                       </a>

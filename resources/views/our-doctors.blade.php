@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Our Doctors | SIAG
+@endsection
+@section('meta_description')
+Meet SIAG’s gastroenterologists, surgeons, and faculty. UK-trained specialists, Executive Director, and visiting faculty at Civil Hospital Karachi.
+@endsection
 @section('content')
   <!-- Start Page Heading -->
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="{{asset('assets/img/banners/our-doctors-bg.jpg')}}">
@@ -240,7 +246,7 @@
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
               <div class="team-details-box">
-                <h3 class="cs_doctor_title">Dr. Sajida Qureshi</h3>
+                <h3 class="cs_doctor_title"><a href="{{ route('dr-sajida-qureshi') }}">Dr. Sajida Qureshi</a></h3>
                 <h6 class="cs_doctor_subtitle">MBBS | FCPS | FRCS (Edinburgh) | Fellowship in Upper GI & Bariatric Surgery (UK & France)</h6>
                 <p>
                   Consultant Upper GI, Bariatric, and Robotic Surgeon<br>
@@ -257,7 +263,7 @@
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
               <div class="team-details-box">
-                <h3 class="cs_doctor_title">Dr. Babar Matin</h3>
+                <h3 class="cs_doctor_title"><a href="{{ route('dr-babar-matin') }}">Dr. Babar Matin</a></h3>
                 <h6 class="cs_doctor_subtitle">MBBS Chief Operating Officer (SIAG) & Incharge GI MOTILITY</h6>
                 <p>
 
@@ -289,10 +295,10 @@
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
               <div class="team-details-box">
-                <h3 class="cs_doctor_title">Dr. Aftab Leghari</h3>
+                <h3 class="cs_doctor_title"><a href="{{ route('dr-aftab-leghari') }}">Dr. Aftab Leghari</a></h3>
                 <h6 class="cs_doctor_subtitle">MBBS | FCPS (General Surgery) | MRCPS (Glasg)</h6>
                 <p>
-                  
+
                 </p>
               </div>
             </div>
@@ -305,10 +311,10 @@
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
               <div class="team-details-box">
-                <h3 class="cs_doctor_title">Dr. Shanil Kadir</h3>
+                <h3 class="cs_doctor_title"><a href="{{ route('dr-shanil-kadir') }}">Dr. Shanil Kadir</a></h3>
                 <h6 class="cs_doctor_subtitle">MBBS | MRCP (UK) | FEBGH | FRCP (Glas) | FRCP(Edin) | CCT G(I)M & Gastroenterology</h6>
                 <p>
-                  
+
                 </p>
               </div>
             </div>
@@ -637,7 +643,7 @@
                 <div class="cs_doctor_thumbnail_shape2 position-absolute cs_accent_bg"></div>
               </div>
               <div class="team-details-box">
-                <h3 class="cs_doctor_title">Dr. Babar Matin</h3>
+                <h3 class="cs_doctor_title"><a href="{{ route('dr-babar-matin') }}">Dr. Babar Matin</a></h3>
                 <h6 class="cs_doctor_subtitle">MBBS (Dow) | G.I Motility Diagnostics</h6>
               </div>
             </div>

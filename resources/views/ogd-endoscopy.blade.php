@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+OGD Endoscopy | SIAG
+@endsection
+@section('meta_description')
+OGD (upper GI endoscopy) at SIAG: procedure info, preparation, and what to expect. Free diagnostic and therapeutic endoscopy in Karachi.
+@endsection
 @section('content')
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/hero_slider_3.jpg">
     <div class="container">

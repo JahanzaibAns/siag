@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Donate | SIAG
+@endsection
+@section('meta_description')
+Support SIAG. Donate to free gastroenterology and endoscopy care, training, and research at Civil Hospital Karachi.
+@endsection
 @section('content')
   <style>
     .donate-section { padding: 60px 0 80px; }

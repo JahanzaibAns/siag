@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Colonoscopy | SIAG
+@endsection
+@section('meta_description')
+Colonoscopy at SIAG: screening, preparation, duration, and recovery. Free colonoscopy and polyp removal at Civil Hospital Karachi.
+@endsection
 @section('content')
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/hero_slider_3.jpg">
     <div class="container">

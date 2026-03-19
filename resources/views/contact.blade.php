@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Contact Us | SIAG
+@endsection
+@section('meta_description')
+Get in touch with SIAG Karachi. Contact details, location at Civil Hospital, and inquiry form for appointments and gastroenterology services.
+@endsection
 @section('content')
   <!-- Start Page Heading -->
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="{{asset('assets/img/banners/contact-banner.jpg')}}">

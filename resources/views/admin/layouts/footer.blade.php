@@ -5,7 +5,7 @@
 
 <div class="quote-container">
     <blockquote>
-        Developed and maintained by <a href="javascript:void(0);">SIAG</a>
+        Developed and maintained by <a href="{{ route('index') }}">SIAG</a>
     </blockquote>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+SpyGlass Cholangioscopy | SIAG
+@endsection
+@section('meta_description')
+SpyGlass cholangioscopy and bile duct visualization at SIAG. Advanced diagnostic and therapeutic biliary procedures in Karachi.
+@endsection
 @section('content')
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="assets/img/banners/hero_slider_3.jpg">
     <div class="container">

@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Trainings | SIAG
+@endsection
+@section('meta_description')
+SIAG gastroenterology and endoscopy training programs. Fellowships, hands-on training, and continuing medical education in Karachi.
+@endsection
 @section('content')
     <!-- Start Page Heading -->
     <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"

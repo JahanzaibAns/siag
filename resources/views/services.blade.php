@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Services | SIAG
+@endsection
+@section('meta_description')
+SIAG services: OGD, colonoscopy, ERCP, EUS, FibroScan, manometry, and more. Free advanced gastroenterology procedures at Civil Hospital Karachi.
+@endsection
 @section('content')
 <style>
     .cs_card.cs_style_1 .cs_card_info_wrapper{

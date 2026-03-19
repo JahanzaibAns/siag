@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Events | SIAG
+@endsection
+@section('meta_description')
+SIAG events and workshops. 8th Hands on ERCP Workshop, 6th Sindh AEG EUS Workshop, and other gastroenterology events in Karachi.
+@endsection
 @section('content')
 <!-- Start Page Heading -->
 <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay"
@@ -36,10 +42,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">01</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">8th Hands on ERCP Workshop</a></h3>
+                <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('8th-hands-on-ercp-workshop') }}">8th Hands on ERCP Workshop</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('8th-hands-on-ercp-workshop') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -51,10 +57,10 @@
             <div class="cs_card_info_wrapper">
               <div class="cs_card_index cs_white_color">02</div>
               <div class="cs_card_text">
-                <h3 class="cs_card_title cs_white_color mb-0"><a href="javascript:void(0);">6th Sindh AEG EUS Workshop</a></h3>
+                  <h3 class="cs_card_title cs_white_color mb-0"><a href="{{ route('6th-sindh-aeg-eus-workshop') }}">6th Sindh AEG EUS Workshop</a></h3>
                 <!-- <p class="cs_card_subtitle cs_white_color mb-0">Medical / Doctor</p> -->
               </div>
-              <a href="#" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
+              <a href="{{ route('6th-sindh-aeg-eus-workshop') }}" class="cs_iconbox_btn cs_center"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
           </div>
         </div>

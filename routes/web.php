@@ -48,6 +48,18 @@ Route::get('/trainings', function () {
 Route::get('/sessions', function () {
     return view('sessions');
 })->name('sessions');
+Route::get('/advancing-careers-abroad', function () {
+    return view('session-advancing-careers-abroad');
+})->name('session.advancing.careers.abroad');
+Route::get('/ai-sessions', function () {
+    return view('session-ai-sessions');
+})->name('session.ai.sessions');
+Route::get('/occupational-safety', function () {
+    return view('session-occupational-safety');
+})->name('session.occupational.safety');
+Route::get('/grant-writing-workshop', function () {
+    return view('session-grant-writing-workshop');
+})->name('session.grant.writing.workshop');
 Route::get('/newsletter', function () {
     return view('newsletter');
 })->name('newsletter');
@@ -57,6 +69,12 @@ Route::get('/events', function () {
 Route::get('/images', function () {
     return view('images');
 })->name('images');
+Route::get('/8th-hands-on-ercp-workshop', function () {
+    return view('events-8th-hands-on-ercp-workshop');
+})->name('8th-hands-on-ercp-workshop');
+Route::get('/6th-sindh-aeg-eus-workshop', function () {
+    return view('events-6th-sindh-aeg-eus-workshop');
+})->name('6th-sindh-aeg-eus-workshop');
 Route::get('/videos', function () {
     return view('videos');
 })->name('videos');
@@ -108,7 +126,42 @@ Route::get('/advanced-diagnostic-technologies', function () {
 Route::get('/innovation-and-technology-lab', function () {
     return view('innovation-and-technology-lab');
 })->name('innovation.and.technology.lab');
+Route::get('/dr-saad-khalid-niaz', function () {
+    return view('dr-saad-khalid-niaz');
+})->name('dr-saad-khalid-niaz');
+Route::get('/dr-babar-matin', function () {
+    return view('dr-babar-matin');
+})->name('dr-babar-matin');
+Route::get('/dr-aftab-leghari', function () {
+    return view('dr-aftab-leghari');
+})->name('dr-aftab-leghari');
+Route::get('/dr-sajida-qureshi', function () {
+    return view('dr-sajida-qureshi');
+})->name('dr-sajida-qureshi');
+Route::get('/dr-shanil-kadir', function () {
+    return view('dr-shanil-kadir');
+})->name('dr-shanil-kadir');
+Route::permanentRedirect('/workshop/colonoscopy', '/colonoscopy-workshop');
+Route::permanentRedirect('/workshop/ercp', '/ercp-workshop');
+Route::permanentRedirect('/workshop/eus', '/eus-workshop');
+Route::permanentRedirect('/workshop/advanced-techniques-endoscopy', '/advanced-techniques-endoscopy-workshop');
+Route::permanentRedirect('/workshop/train-the-trainer', '/train-the-trainer-workshop');
 
+Route::get('/colonoscopy-workshop', function () {
+    return view('colonoscopy-workshop');
+})->name('colonoscopy.workshop');
+Route::get('/ercp-workshop', function () {
+    return view('ercp-workshop');
+})->name('ercp.workshop');
+Route::get('/eus-workshop', function () {
+    return view('eus-workshop');
+})->name('eus.workshop');
+Route::get('/advanced-techniques-endoscopy-workshop', function () {
+    return view('advanced-techniques-endoscopy-workshop');
+})->name('advanced.techniques.endoscopy.workshop');
+Route::get('/train-the-trainer-workshop', function () {
+    return view('train-the-trainer-workshop');
+})->name('train.the.trainer.workshop');
 
 // Admin Authentication Routes (Public)
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');

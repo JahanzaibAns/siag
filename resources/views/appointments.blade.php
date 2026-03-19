@@ -1,4 +1,10 @@
 @extends('layout.main')
+@section('title')
+Book an Appointment | SIAG
+@endsection
+@section('meta_description')
+Book a free gastroenterology or endoscopy appointment at SIAG, Civil Hospital Karachi. Fill the form to request a consultation.
+@endsection
 @section('content')
   <!-- Start Page Heading -->
   <section class="cs_page_heading cs_bg_filed cs_center img_banner_overlay" data-src="{{asset('assets/img/medical_solution_1.JPG')}}">
